@@ -132,5 +132,8 @@ button,
 
 a,
 button {
+  color: inherit;
+  font-family: inherit;
+
   user-select: none;
 }

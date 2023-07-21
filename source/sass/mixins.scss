@@ -5,33 +5,35 @@
 }
 
 @mixin hover {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
+  &:hover:not([disabled]) {
+    @content;
   }
 }
 
 @mixin focus {
-  &.focus-visible:focus {
+  &:focus-visible:not([disabled]) {
     @content;
   }
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active:not([disabled]) {
     @content;
   }
 }
 
 @mixin hover-focus {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
+  @include hover {
+    @content;
   }
 
-  &.focus-visible:focus {
+  @include focus {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &[disabled] {
     @content;
   }
 }
@@ -43,7 +45,7 @@
   }
 }
 
-@mixin phone {
+@mixin mobile {
   @media (max-width: ($vp-768 - 1px)) {
     @content;
   }

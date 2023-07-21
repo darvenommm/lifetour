@@ -1,0 +1,72 @@
+.link {
+  position: relative;
+
+  color: $color-default-text-antagonist;
+
+  outline: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    transition: opacity $trans-default-time;
+
+    content: "";
+  }
+
+  &::before {
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+
+    opacity: 0;
+    background-color: $color-default-text-antagonist;
+
+    height: 1px;
+  }
+
+  &::after {
+    inset: -2px;
+
+    opacity: 0;
+
+    border: 1px solid $color-default-text-antagonist;
+  }
+
+  @include hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @include focus {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    &::before,
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  @include disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--on-light {
+    color: $color-default-text;
+
+    &::before {
+      background-color: $color-default-text;
+    }
+
+    &::after {
+      border-color: $color-default-text-antagonist;
+    }
+  }
+}

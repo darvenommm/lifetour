@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 
+import {activeBurger} from './modules/header/burger';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    activeBurger();
+
     const form = new Form();
     window.form = form;
     form.init();

@@ -5,13 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>lifetour</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="./fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <p>lskdjflksdjf</p>
+      <header class="header">
+        <div class="container">
+          <div class="header__container">
+            <button class="header__burger" aria-label="Нажми, чтобы открыть меню.">
+              <svg class="header__burger-open" width="26" height="18" aria-hidden="true">
+                <use xlink:href="./img/sprite.svg#open-burger"></use>
+              </svg>
+              <svg class="header__burger-close" width="18" height="18" aria-hidden="true">
+                <use xlink:href="./img/sprite.svg#close-burger"></use>
+              </svg>
+            </button>
+            <a class="header__logo" href="/">
+              <svg width="205" height="62" aria-label="Логотип нашего сайта.">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="header__navigation">
+              <ul class="header__links">
+                <li class="header__link-item">
+                  <a class="header__link link" href="#tours">Туры</a>
+                </li>
+                <li class="header__link-item">
+                  <a class="header__link link" href="#learning">Обучение</a>
+                </li>
+                <li class="header__link-item">
+                  <a class="header__link link" href="#about-us">О&nbsp;нас</a>
+                </li>
+                <li class="header__link-item">
+                  <a class="header__link link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="header__link-item">
+                  <a class="header__link link" href="#gallery">Фотографии</a>
+                </li>
+                <li class="header__link-item">
+                  <a class="header__link link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__tel" href="tel:78007253232">8 800 725 32 32</a>
+          </div>
+        </div>
       </header>
       <main>
         <h1>Hello world</h1>
@@ -20,7 +61,7 @@
         <p>sldkfjlksdjf</p>
       </footer>
     </div>
-    <script src="js/vendor.min.js" defer></script>
-    <script src="js/main.min.js" defer></script>
+    <script src="./js/vendor.min.js" defer></script>
+    <script src="./js/main.min.js" defer></script>
   </body>
 </html>

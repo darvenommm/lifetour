@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: (1200px + 2 * $desktop-padding);
   margin: 0 auto;
   padding: 0 $desktop-padding;
 
@@ -8,7 +8,7 @@
     padding: 0 $tablet-padding;
   }
 
-  @include phone {
-    padding: 0 $phone-padding;
+  @include mobile {
+    padding: 0 $mobile-padding;
   }
 }
