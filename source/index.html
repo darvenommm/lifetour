@@ -55,7 +55,353 @@
         </div>
       </header>
       <main>
-        <h1>Hello world</h1>
+        <section class="hero hero--first-slide">
+          <h1 class="visually-hidden">Сайт по покупку туров для путешествия.</h1>
+          <div class="container">
+            <div class="hero__container swiper">
+              <ul class="hero__items swiper-wrapper">
+                <li class="hero__item swiper-slide">
+                  <div class="hero__item-top">
+                    <h2 class="hero__title">Захватывающие вершины Кавказа</h2>
+                    <div class="hero__texts">
+                      <p>
+                        В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете
+                        через&nbsp;потрясающие ландшафты и&nbsp;совершите восход
+                        на&nbsp;вершину горы Чегет.
+                      </p>
+                    </div>
+                    <a class="hero__button button" href="#">Смотреть тур</a>
+                  </div>
+                  <div class="hero__item-bottom">
+                    <button class="secondary-button">
+                      <svg width="12" height="12">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      6&nbsp;дней/5&nbsp;ночей
+                    </button>
+                    <button class="secondary-button">
+                      <svg width="12" height="12">
+                        <use xlink:href="./img/sprite.svg#graph"></use>
+                      </svg>
+                      Высокая сложность
+                    </button>
+                  </div>
+                  <div class="hero__video" data-src="https://www.youtube-nocookie.com/embed/9TZXsZItgdw">
+                    <picture>
+                      <source
+                        media="(max-width: 1199px)"
+                        width="442"
+                        height="300"
+                        srcset="./img/hero/first-slide/preview-tablet@2x.webp 2x, ./img/hero/first-slide/preview-tablet@1x.webp 1x"
+                        type="image/webp"
+                      >
+                      <source
+                        media="(max-width: 1199px)"
+                        width="442"
+                        height="300"
+                        srcset="./img/hero/first-slide/preview-tablet@2x.jpg 2x, ./img/hero/first-slide/preview-tablet@1x.jpg 1x"
+                      >
+                      <source
+                        width="482"
+                        height="317"
+                        srcset="./img/hero/first-slide/preview-desktop@2x.webp 2x, ./img/hero/first-slide/preview-desktop@1x.webp 1x"
+                        type="image/webp"
+                      >
+                      <img
+                        width="482"
+                        height="317"
+                        srcset="./img/hero/first-slide/preview-desktop@2x.jpg 2x, ./img/hero/first-slide/preview-desktop@1x.jpg 1x"
+                        src="./img/hero/first-slide/preview-desktop@1x.jpg"
+                        alt="Мужчина на горе."
+                      >
+                    </picture>
+                    <button class="hero__video-button" type="button">
+                      <svg class="hero__video-play" width="12" height="22">
+                        <use xlink:href="./img/sprite.svg#play"></use>
+                      </svg>
+                      <svg class="hero__video-play-with-border" width="12" height="22">
+                        <use xlink:href="./img/sprite.svg#play-with-border"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <div class="hero__item-top">
+                    <h2 class="hero__title">Невероятная природа Камчатки</h2>
+                    <div class="hero__texts">
+                      <p>
+                        ВНезабываемое приключение, во&nbsp;время которого
+                        вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному
+                        из&nbsp;самых нетронутых уголков дикой природы
+                        в&nbsp;мире.
+                      </p>
+                    </div>
+                    <a class="hero__button button" href="#">Смотреть тур</a>
+                  </div>
+                  <div class="hero__item-bottom">
+                    <button class="secondary-button">
+                      <svg width="12" height="12">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      9&nbsp;дней/10&nbsp;ночей
+                    </button>
+                    <button class="secondary-button">
+                      <svg width="12" height="12">
+                        <use xlink:href="./img/sprite.svg#graph"></use>
+                      </svg>
+                      Средняя сложность
+                    </button>
+                  </div>
+                  <div class="hero__cards">
+                    <picture>
+                      <source
+                        media="(max-width: 1199px)"
+                        width="442"
+                        height="365"
+                        srcset="./img/hero/second-slide/cards-tablet@2x.webp 2x, ./img/hero/second-slide/cards-tablet@1x.webp 1x"
+                        type="image/webp"
+                      >
+                      <source
+                        media="(max-width: 1199px)"
+                        width="442"
+                        height="365"
+                        srcset="./img/hero/second-slide/cards-tablet@2x.jpg 2x, ./img/hero/second-slide/cards-tablet@1x.jpg 1x"
+                      >
+                      <source
+                        width="410"
+                        height="459"
+                        srcset="./img/hero/second-slide/cards-desktop@2x.webp 2x, ./img/hero/second-slide/cards-desktop@1x.webp 1x"
+                        type="image/webp"
+                      >
+                      <img
+                        width="410"
+                        height="459"
+                        srcset="./img/hero/second-slide/cards-desktop@2x.jpg 2x, ./img/hero/second-slide/cards-desktop@1x.jpg 1x"
+                        src="./img/hero/second-slide/cards-desktop@1x.jpg"
+                        alt="Мужчина на горе."
+                      >
+                    </picture>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <div class="hero__item-top">
+                    <h2 class="hero__title">Магические пейзажи Алтайского Края</h2>
+                    <div class="hero__texts">
+                      <p>
+                        Алтайский трекинг-тур&nbsp;&mdash; это захватывающее
+                        приключение с&nbsp;посещением магических
+                        и&nbsp;захватывающих дух ландшафтов Алтайских гор.
+                      </p>
+                    </div>
+                    <a class="hero__button button" href="#">Смотреть тур</a>
+                  </div>
+                  <div class="hero__item-bottom">
+                    <button class="secondary-button">
+                      <svg width="12" height="12">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      6&nbsp;дней/5&nbsp;ночей
+                    </button>
+                    <button class="secondary-button">
+                      <svg width="12" height="12">
+                        <use xlink:href="./img/sprite.svg#graph"></use>
+                      </svg>
+                      Высокая сложность
+                    </button>
+                  </div>
+                  <div class="hero__audio audio">
+                    <audio src="#"></audio>
+                    <p class="audio__title">Алтай</p>
+                    <div class="audio__over-line">
+                      <p class="audio__band">Lifetour</p>
+                      <div class="audio__over-line-controls">
+                        <button class="audio__control" type="button">
+                          <svg width="15" height="13">
+                            <use xlink:href="./img/sprite.svg#heart"></use>
+                          </svg>
+                        </button>
+                        <button class="audio__control" type="button">
+                          <svg width="15" height="13">
+                            <use xlink:href="./img/sprite.svg#download"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="audio__line">
+                      <span class="audio__spended-line"></span>
+                      <span class="audio__point"></span>
+                    </div>
+                    <div class="audio__metadata">
+                      <output class="audio__current-time">0:00</output>
+                      <output class="audio__all-time">4:00</output>
+                    </div>
+                    <div class="audio__controls">
+                      <button class="audio__control" type="button">
+                        <svg width="21" height="17">
+                          <use xlink:href="./img/sprite.svg#random-music"></use>
+                        </svg>
+                      </button>
+                      <div class="audio__controls-center">
+                        <button class="audio__control" type="button">
+                          <svg width="18" height="17">
+                            <use xlink:href="./img/sprite.svg#prev-music"></use>
+                          </svg>
+                        </button>
+                        <button class="audio__control audio__play" type="button">
+                          <svg width="23" height="23">
+                            <use xlink:href="./img/sprite.svg#play"></use>
+                          </svg>
+                        </button>
+                        <button class="audio__control" type="button">
+                          <svg width="18" height="17">
+                            <use xlink:href="./img/sprite.svg#next-music"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <button class="audio__control" type="button">
+                        <svg width="21" height="17">
+                          <use xlink:href="./img/sprite.svg#repeat"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="hero__paginations"></ul>
+            </div>
+          </div>
+          <span class="hero__first-background" aria-hidden="true">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/first-slide/background-phone@2x.webp 2x, ./img/hero/first-slide/background-phone@1x.webp 1x"
+                type="image/webp"
+              >
+              <source
+                media="(max-width: 767px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/first-slide/background-phone@2x.jpg 2x, ./img/hero/first-slide/background-phone@1x.jpg 1x"
+              >
+              <source
+                media="(max-width: 1199px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/first-slide/background-tablet@2x.webp 2x, ./img/hero/first-slide/background-tablet@1x.webp 1x"
+                type="image/webp"
+              >
+              <source
+                media="(max-width: 1199px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/first-slide/background-tablet@2x.jpg 2x, ./img/hero/first-slide/background-tablet@1x.jpg 1x"
+              >
+              <source
+                width="0"
+                height="0"
+                srcset="./img/hero/first-slide/background-desktop@2x.webp 2x, ./img/hero/first-slide/background-desktop@1x.webp 1x"
+                type="image/webp"
+              >
+              <img
+                width="0"
+                height="0"
+                srcset="./img/hero/first-slide/background-desktop@2x.jpg 2x, ./img/hero/first-slide/background-desktop@1x.jpg 1x"
+                src="./img/hero/first-slide/background-desktop@1x.jpg"
+                alt="Фоновое изображение."
+              >
+            </picture>
+          </span>
+          <span class="hero__second-background" aria-hidden="true">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/second-slide/background-phone@2x.webp 2x, ./img/hero/second-slide/background-phone@1x.webp 1x"
+                type="image/webp"
+              >
+              <source
+                media="(max-width: 767px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/second-slide/background-phone@2x.jpg 2x, ./img/hero/second-slide/background-phone@1x.jpg 1x"
+              >
+              <source
+                media="(max-width: 1199px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/second-slide/background-tablet@2x.webp 2x, ./img/hero/second-slide/background-tablet@1x.webp 1x"
+                type="image/webp"
+              >
+              <source
+                media="(max-width: 1199px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/second-slide/background-tablet@2x.jpg 2x, ./img/hero/second-slide/background-tablet@1x.jpg 1x"
+              >
+              <source
+                width="0"
+                height="0"
+                srcset="./img/hero/second-slide/background-desktop@2x.webp 2x, ./img/hero/second-slide/background-desktop@1x.webp 1x"
+                type="image/webp"
+              >
+              <img
+                width="0"
+                height="0"
+                srcset="./img/hero/second-slide/background-desktop@2x.jpg 2x, ./img/hero/second-slide/background-desktop@1x.jpg 1x"
+                src="./img/hero/second-slide/background-desktop@1x.jpg"
+                alt="Фоновое изображение."
+                loading="lazy"
+              >
+            </picture>
+          </span>
+          <span class="hero__third-background" aria-hidden="true">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/third-slide/background-phone@2x.webp 2x, ./img/hero/third-slide/background-phone@1x.webp 1x"
+                type="image/webp"
+              >
+              <source
+                media="(max-width: 767px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/third-slide/background-phone@2x.jpg 2x, ./img/hero/third-slide/background-phone@1x.jpg 1x"
+              >
+              <source
+                media="(max-width: 1199px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/third-slide/background-tablet@2x.webp 2x, ./img/hero/third-slide/background-tablet@1x.webp 1x"
+                type="image/webp"
+              >
+              <source
+                media="(max-width: 1199px)"
+                width="0"
+                height="0"
+                srcset="./img/hero/third-slide/background-tablet@2x.jpg 2x, ./img/hero/third-slide/background-tablet@1x.jpg 1x"
+              >
+              <source
+                width="0"
+                height="0"
+                srcset="./img/hero/third-slide/background-desktop@2x.webp 2x, ./img/hero/third-slide/background-desktop@1x.webp 1x"
+                type="image/webp"
+              >
+              <img
+                width="0"
+                height="0"
+                srcset="./img/hero/third-slide/background-desktop@2x.jpg 2x, ./img/hero/third-slide/background-desktop@1x.jpg 1x"
+                src="./img/hero/third-slide/background-desktop@1x.jpg"
+                alt="Фоновое изображение."
+                loading="lazy"
+              >
+            </picture>
+          </span>
+        </section>
       </main>
       <footer>
         <p>sldkfjlksdjf</p>

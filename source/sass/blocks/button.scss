@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+
+  color: $color-default-text-antagonist;
+  line-height: 100%;
+  font-weight: 500;
+  text-align: center;
+
+  background-color: #0266c1;
+  transition:
+    color $trans-default-time,
+    background-color $trans-default-time,
+    border-color $trans-default-time;
+  border: 1px solid transparent;
+
+  padding: 21px 10px;
+  width: 220px;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+
+    background-color: #ffffff;
+
+    border: 1px solid $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-default-text-antagonist;
+
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
+  @include disabled {
+    background-color: rgba(2, 102, 193, 0.1);
+    cursor: not-allowed;
+  }
+}

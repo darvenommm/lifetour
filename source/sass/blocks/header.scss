@@ -1,16 +1,35 @@
 $header__menu-trans-time: 300ms;
 
 .header {
-  color: $color-default-text-antagonist;
+  position: relative;
 
-  background-color: $color-polo-blue;
+  color: $color-default-text-antagonist;
 
   padding-top: 40px;
 
-  @include tablet {
-    position: relative;
-    z-index: 0;
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
 
+    background-color: $color-polo-blue;
+
+    content: "";
+  }
+
+  &::after {
+    position: fixed;
+    inset: 0;
+    z-index: -3;
+
+    opacity: 0;
+    transition: opacity $trans-default-time;
+    background-color: rgba(#000000, 0.5);
+
+    content: "";
+  }
+
+  @include tablet {
     transition: color $header__menu-trans-time;
 
     padding-top: 30px;
@@ -22,11 +41,42 @@ $header__menu-trans-time: 300ms;
   }
 }
 
+.header__burger,
+.header__logo,
+.header__link,
+.header__tel {
+  position: relative;
+  z-index: 4;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0 10px;
+}
+
+.header__navigation {
+  @include tablet {
+    position: absolute;
+    right: 150vw;
+    top: 0;
+    z-index: 3;
+
+    flex-direction: column;
+
+    color: $color-default-text;
+
+    background-color: $color-default-bg;
+    transition: right $header__menu-trans-time;
+
+    width: 100vw;
+    padding: 114px 35px 60px;
+  }
+
+  @include mobile {
+    padding: 94px $mobile-padding 45px;
+  }
 }
 
 .header__burger {
@@ -49,31 +99,12 @@ $header__menu-trans-time: 300ms;
   display: none;
 }
 
-.header__navigation {
-  @include tablet {
-    position: absolute;
-    right: 150vw;
-    top: 0;
-    z-index: -1;
-
-    flex-direction: column;
-
-    color: $color-default-text;
-
-    background-color: $color-default-bg;
-    transition: right $header__menu-trans-time;
-
-    width: 100vw;
-    padding: 114px 35px 60px;
-  }
-
-  @include mobile {
-    padding: 94px $mobile-padding 45px;
-  }
-}
-
 .header__logo {
   display: flex;
+
+  transition:
+    opacity $trans-default-time,
+    color $trans-default-time;
 
   width: 205px;
   height: 62px;
@@ -81,6 +112,19 @@ $header__menu-trans-time: 300ms;
   svg {
     width: 100%;
     height: auto;
+  }
+
+  @include hover-focus {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.7;
+  }
+
+  @include disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   @include tablet {
@@ -188,6 +232,12 @@ $header__menu-trans-time: 300ms;
 
     .header__burger-open {
       display: none;
+    }
+
+    &::after {
+      z-index: 2;
+
+      opacity: 1;
     }
   }
 }

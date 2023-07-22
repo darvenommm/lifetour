@@ -1,4 +1,4 @@
-export const activeBurger = () => {
+export const activateBurger = () => {
   const BURGER_ACTIVE = 'burgerActive';
   const SHOWED_LINK_CLASS = 'link--on-light';
   const BURGER_ARIA_LABEL_AFTER_OPENING = 'Нажми, чтобы закрыть меню.';
