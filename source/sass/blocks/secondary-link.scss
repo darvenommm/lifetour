@@ -1,0 +1,15 @@
+.secondary-link {
+  transition: color $trans-default-time;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+
+  @include disabled {
+    opacity: 0.1;
+  }
+}

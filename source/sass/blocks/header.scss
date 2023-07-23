@@ -185,8 +185,6 @@ $header__menu-trans-time: 300ms;
   line-height: 100%;
   font-weight: 600;
 
-  transition: color $trans-default-time;
-
   padding: 20px 0;
 
   @include tablet {
@@ -203,18 +201,6 @@ $header__menu-trans-time: 300ms;
     font-size: 14px;
 
     padding: 6px 0;
-  }
-
-  @include hover-focus {
-    color: $color-resolution-blue;
-  }
-
-  @include active {
-    color: $color-navy-blue;
-  }
-
-  @include disabled {
-    opacity: 0.1;
   }
 }
 

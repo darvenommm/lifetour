@@ -50,7 +50,7 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__tel" href="tel:78007253232">8 800 725 32 32</a>
+            <a class="header__tel secondary-link" href="tel:78007253232">8 800 725 32 32</a>
           </div>
         </div>
       </header>
@@ -402,10 +402,317 @@
             </picture>
           </span>
         </section>
+        <section class="tours">
+          <div class="container">
+            <div class="tours__top">
+              <h2 class="tours__title" id="tours">Ближайшие туры</h2>
+              <div class="tours__controls">
+                <button
+                  class="tours__prev button"
+                  type="button"
+                  aria-label="Нажми, чтобы переместиться на один слайд назад."
+                >
+                  <svg width="37" height="35" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#left-arrow"></use>
+                  </svg>
+                </button>
+                <button
+                  class="tours__next button"
+                  type="button"
+                  aria-label="Нажми, чтобы переместиться на один слайд назад."
+                >
+                  <svg width="37" height="35" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="tours__slider swiper">
+              <ul class="tours__slides swiper-wrapper">
+                <li class="tours__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/elbrus@2x.webp 2x, ./img/tours/elbrus@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/elbrus@2x.jpg 2x, ./img/tours/elbrus@1x.jpg 1x"
+                      src="./img/tours/elbrus@1x.jpg"
+                      alt="Фоновое изображение."
+                    >
+                  </picture>
+                  <div class="tours__slide-top">
+                    <p class="tours__slide-place" aria-label="Место поездки - Кавказ.">
+                      <svg width="12" height="9" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#address"></use>
+                      </svg>
+                      Кавказ
+                    </p>
+                    <p class="tours__slide-days" aria-label="Поездка длится 4 дня">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      4 дня
+                    </p>
+                    <p class="tours__slide-night" aria-label="Поездка длится 3 ночи">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      3 ночи
+                    </p>
+                  </div>
+                  <h2 class="tours__slide-title">
+                    Путешествие<br>вокруг Эльбруса
+                  </h2>
+                  <div class="tours__slide-bottom">
+                    <p class="tours__slide-difficult">
+                      <span class="tours__slide-type">Сложность:</span>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                    </p>
+                    <p class="tours__slide-date">
+                      <span class="tours__slide-type">Даты набора:</span>
+                      12.06-19.06
+                    </p>
+                    <p class="tours__slide-group">
+                      <span class="tours__slide-type">Группа:</span>
+                      до&nbsp;15&nbsp;чел.
+                    </p>
+                  </div>
+                </li>
+                <li class="tours__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/white-whale@2x.webp 2x, ./img/tours/white-whale@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/white-whale@2x.jpg 2x, ./img/tours/white-whale@1x.jpg 1x"
+                      src="./img/tours/white-whale@1x.jpg"
+                      alt="Фоновое изображение."
+                    >
+                  </picture>
+                  <div class="tours__slide-top">
+                    <p class="tours__slide-place" aria-label="Место поездки - Кавказ.">
+                      <svg width="12" height="9" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#address"></use>
+                      </svg>
+                      Алтай
+                    </p>
+                    <p class="tours__slide-days" aria-label="Поездка длится 14 дней">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      14 дней
+                    </p>
+                    <p class="tours__slide-night" aria-label="Поездка длится 13 ночей">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      13 ночей
+                    </p>
+                  </div>
+                  <h2 class="tours__slide-title">
+                    Путь к подножию<br>Белухи
+                  </h2>
+                  <div class="tours__slide-bottom">
+                    <p class="tours__slide-difficult">
+                      <span class="tours__slide-type">Сложность:</span>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                    </p>
+                    <p class="tours__slide-date">
+                      <span class="tours__slide-type">Даты набора:</span>
+                      14.06-23.06
+                    </p>
+                    <p class="tours__slide-group">
+                      <span class="tours__slide-type">Группа:</span>
+                      до&nbsp;25&nbsp;чел.
+                    </p>
+                  </div>
+                </li>
+                <li class="tours__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/black-sea@2x.webp 2x, ./img/tours/black-sea@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/black-sea@2x.jpg 2x, ./img/tours/black-sea@1x.jpg 1x"
+                      src="./img/tours/black-sea@1x.jpg"
+                      alt="Фоновое изображение."
+                    >
+                  </picture>
+                  <div class="tours__slide-top">
+                    <p class="tours__slide-place" aria-label="Место поездки - Кавказ.">
+                      <svg width="12" height="9" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#address"></use>
+                      </svg>
+                      Адыгея
+                    </p>
+                    <p class="tours__slide-days" aria-label="Поездка длится 7 дней">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      7 дней
+                    </p>
+                    <p class="tours__slide-night" aria-label="Поездка длится 6 ночей">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      6 ночей
+                    </p>
+                  </div>
+                  <h2 class="tours__slide-title">
+                    Через Фишт<br>к&nbsp;Черному морю
+                  </h2>
+                  <div class="tours__slide-bottom">
+                    <p class="tours__slide-difficult">
+                      <span class="tours__slide-type">Сложность:</span>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                    </p>
+                    <p class="tours__slide-date">
+                      <span class="tours__slide-type">Даты набора:</span>
+                      15.07-19.07
+                    </p>
+                    <p class="tours__slide-group">
+                      <span class="tours__slide-type">Группа:</span>
+                      до&nbsp;22&nbsp;чел.
+                    </p>
+                  </div>
+                </li>
+                <li class="tours__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/black-sea@2x.webp 2x, ./img/tours/black-sea@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      height="0"
+                      width="0"
+                      srcset="./img/tours/black-sea@2x.jpg 2x, ./img/tours/black-sea@1x.jpg 1x"
+                      src="./img/tours/black-sea@1x.jpg"
+                      alt="Фоновое изображение."
+                    >
+                  </picture>
+                  <div class="tours__slide-top">
+                    <p class="tours__slide-place" aria-label="Место поездки - Кавказ.">
+                      <svg width="12" height="9" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#address"></use>
+                      </svg>
+                      Адыгея
+                    </p>
+                    <p class="tours__slide-days" aria-label="Поездка длится 7 дней">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      7 дней
+                    </p>
+                    <p class="tours__slide-night" aria-label="Поездка длится 6 ночей">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      6 ночей
+                    </p>
+                  </div>
+                  <h2 class="tours__slide-title">
+                    Через Фишт<br>к&nbsp;Черному морю
+                  </h2>
+                  <div class="tours__slide-bottom">
+                    <p class="tours__slide-difficult">
+                      <span class="tours__slide-type">Сложность:</span>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#full-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                      <svg width="15" height="13" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#empty-star"></use>
+                      </svg>
+                    </p>
+                    <p class="tours__slide-date">
+                      <span class="tours__slide-type">Даты набора:</span>
+                      15.07-19.07
+                    </p>
+                    <p class="tours__slide-group">
+                      <span class="tours__slide-type">Группа:</span>
+                      до&nbsp;22&nbsp;чел.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="tours__link secondary-link" href="#">
+              Показать все туры
+              <svg width="9" height="14">
+                <use xlink:href="./img/sprite.svg#small-right-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
       </main>
-      <footer>
-        <p>sldkfjlksdjf</p>
-      </footer>
+      <footer></footer>
     </div>
     <script src="./js/vendor.min.js" defer></script>
     <script src="./js/main.min.js" defer></script>

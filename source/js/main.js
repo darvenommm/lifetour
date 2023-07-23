@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {activateBurger} from './modules/header/burger';
 import {initHeroSlider} from './modules/hero/slider';
 import {addHeroVideoHandlers} from './modules/hero/video';
+import {initToursSlider} from './modules/tours/initToursSlider';
 
 // ---------------------------------
 
@@ -21,8 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     activateBurger();
+
     initHeroSlider();
     addHeroVideoHandlers();
+
+    initToursSlider();
 
     const form = new Form();
     window.form = form;
