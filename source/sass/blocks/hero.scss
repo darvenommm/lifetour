@@ -325,6 +325,10 @@ $hero__background-time: 300ms;
 
     transform: translateX(50%);
   }
+
+  @include mobile {
+    bottom: 12px;
+  }
 }
 
 .hero__pagination-item {

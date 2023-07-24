@@ -4,7 +4,8 @@ import {Form} from './modules/form-validate/form';
 import {activateBurger} from './modules/header/burger';
 import {initHeroSlider} from './modules/hero/slider';
 import {addHeroVideoHandlers} from './modules/hero/video';
-import {initToursSlider} from './modules/tours/initToursSlider';
+import {initToursSlider} from './modules/tours/init-tours-slider';
+import {initLearningSlider} from './modules/learning/init-learning-slider';
 
 // ---------------------------------
 
@@ -27,6 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
     addHeroVideoHandlers();
 
     initToursSlider();
+
+    initLearningSlider();
 
     const form = new Form();
     window.form = form;
