@@ -8,6 +8,7 @@ import {initToursSlider} from './modules/tours/init-tours-slider';
 import {initLearningSlider} from './modules/learning/init-learning-slider';
 import {initReviewsSlider} from './modules/reviews/init-reviews-slider';
 import {initBenefitsSlider} from './modules/benefits/init-benefits-slider';
+import {initGallerySlider} from './modules/gallery/init-gallery-slider';
 
 // ---------------------------------
 
@@ -38,6 +39,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (window.matchMedia('(min-width: 1200px)').matches) {
       initBenefitsSlider();
     }
+
+    initGallerySlider();
 
     const form = new Form();
     window.form = form;
