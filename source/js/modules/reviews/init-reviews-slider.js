@@ -11,6 +11,7 @@ export const initReviewsSlider = () => {
     allowTouchMove: isMobile(),
     speed: 300,
     spaceBetween: 30,
+    watchOverflow: true,
 
     breakpoints: {
       0: {

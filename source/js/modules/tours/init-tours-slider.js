@@ -10,6 +10,7 @@ export const initToursSlider = () => {
   const slider = new Swiper(SLIDER_SELECTOR, {
     allowTouchMove: isMobile(),
     speed: 300,
+    watchOverflow: true,
 
     breakpoints: {
       0: {

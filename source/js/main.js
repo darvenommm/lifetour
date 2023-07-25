@@ -7,6 +7,7 @@ import {addHeroVideoHandlers} from './modules/hero/video';
 import {initToursSlider} from './modules/tours/init-tours-slider';
 import {initLearningSlider} from './modules/learning/init-learning-slider';
 import {initReviewsSlider} from './modules/reviews/init-reviews-slider';
+import {initBenefitsSlider} from './modules/benefits/init-benefits-slider';
 
 // ---------------------------------
 
@@ -33,6 +34,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initLearningSlider();
 
     initReviewsSlider();
+
+    if (window.matchMedia('(min-width: 1200px)').matches) {
+      initBenefitsSlider();
+    }
 
     const form = new Form();
     window.form = form;

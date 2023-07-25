@@ -21,6 +21,7 @@ export function initHeroSlider() {
     spaceBetween: 50,
     speed: 300,
     allowTouchMove: isMobile(),
+    watchOverflow: true,
 
     on: {
       init: (swiper) => {
