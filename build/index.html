@@ -409,7 +409,7 @@
               <h2 class="tours__title" id="tours">Ближайшие туры</h2>
               <div class="tours__controls">
                 <button
-                  class="tours__prev button"
+                  class="tours__prev arrow"
                   type="button"
                   aria-label="Нажми, чтобы переместиться на один слайд назад."
                 >
@@ -418,7 +418,7 @@
                   </svg>
                 </button>
                 <button
-                  class="tours__next button"
+                  class="tours__next arrow"
                   type="button"
                   aria-label="Нажми, чтобы переместиться на один слайд назад."
                 >
@@ -726,7 +726,7 @@
               <h3 class="learning__subtitle">Наши инструкторы</h3>
               <div class="learning__controls">
                 <button
-                  class="learning__prev button"
+                  class="learning__prev arrow"
                   type="button"
                   aria-label="Нажми, чтобы переместиться на один слайд назад."
                 >
@@ -735,7 +735,7 @@
                   </svg>
                 </button>
                 <button
-                  class="learning__next button"
+                  class="learning__next arrow"
                   type="button"
                   aria-label="Нажми, чтобы переместиться на один слайд назад."
                 >
@@ -1065,6 +1065,150 @@
               alt="Декоративное изображение."
             >
           </picture>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <div class="reviews__header">
+              <h2 class="reviews__title">Отзывы</h2>
+              <div class="reviews__controls">
+                <button
+                  class="reviews__prev arrow"
+                  type="button"
+                  aria-label="Нажми, чтобы переместиться на один слайд назад."
+                >
+                  <svg width="37" height="35" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#left-arrow"></use>
+                  </svg>
+                </button>
+                <button
+                  class="reviews__next arrow"
+                  type="button"
+                  aria-label="Нажми, чтобы переместиться на один слайд назад."
+                >
+                  <svg width="37" height="35" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="reviews__container swiper">
+              <ul class="reviews__slides swiper-wrapper">
+                <li class="reviews__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      width="258"
+                      height="253"
+                      srcset="./img/reviews/alex@2x.webp 2x, ./img/reviews/alex@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      width="258"
+                      height="253"
+                      srcset="./img/reviews/alex@2x.jpg 2x, ./img/reviews/alex@1x.jpg 1x"
+                      src="./img/reviews/alex@1x.jpg"
+                      alt="Мужчина сидит на горе."
+                    >
+                  </picture>
+                  <div class="reviews__content">
+                    <div class="reviews__texts">
+                      <p>
+                        Осенью ходили в&nbsp;поход на&nbsp;Алтай
+                        с&nbsp;друзьями. Впечатления потрясающие!
+                        Инструкторы&nbsp;&mdash; настоящие
+                        эксперты&nbsp;&mdash; всему научили, все показали.
+                        Делились увлекательными историями о&nbsp;местах, людях,
+                        культуре места.
+                      </p>
+                      <p>
+                        С&nbsp;уверенностью могу сказать, что жизнь
+                        разделилась на&nbsp;до&nbsp;этого и&nbsp;после.
+                        Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом.
+                        Всем очень рекомендую!
+                      </p>
+                    </div>
+                    <p class="reviews__source">
+                      <span class="reviews__author">Фролов Александр</span>
+                      38&nbsp;лет, Москва
+                    </p>
+                  </div>
+                </li>
+                <li class="reviews__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      width="258"
+                      height="253"
+                      srcset="./img/reviews/ivan@2x.webp 2x, ./img/reviews/ivan@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      width="258"
+                      height="253"
+                      srcset="./img/reviews/ivan@2x.jpg 2x, ./img/reviews/ivan@1x.jpg 1x"
+                      src="./img/reviews/ivan@1x.jpg"
+                      alt="Мужчина сидит на горе."
+                    >
+                  </picture>
+                  <div class="reviews__content">
+                    <div class="reviews__texts">
+                      <p>
+                        Хороший полноценный поход с&nbsp;разнообразными
+                        локациями. В&nbsp;начале дорога идет по&nbsp;лыжне,
+                        далее прошли мимо полигона, по&nbsp;болотам,
+                        у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца
+                        19&nbsp;века. Было очень интересно!
+                      </p>
+                      <p>
+                        Инструктор Федор дружелюбный, внимательный
+                        к&nbsp;технике безопасности и&nbsp;своим туристам.
+                        Всем советую этот тур.
+                      </p>
+                    </div>
+                    <p class="reviews__source">
+                      <span class="reviews__author">Иван Соловьев</span>
+                      25&nbsp;лет, Владивосток
+                    </p>
+                  </div>
+                </li>
+                <li class="reviews__slide swiper-slide">
+                  <picture aria-hidden="true">
+                    <source
+                      width="258"
+                      height="253"
+                      srcset="./img/reviews/ivan@2x.webp 2x, ./img/reviews/ivan@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <img
+                      width="258"
+                      height="253"
+                      srcset="./img/reviews/ivan@2x.jpg 2x, ./img/reviews/ivan@1x.jpg 1x"
+                      src="./img/reviews/ivan@1x.jpg"
+                      alt="Мужчина сидит на горе."
+                    >
+                  </picture>
+                  <div class="reviews__content">
+                    <div class="reviews__texts">
+                      <p>
+                        Хороший полноценный поход с&nbsp;разнообразными
+                        локациями. В&nbsp;начале дорога идет по&nbsp;лыжне,
+                        далее прошли мимо полигона, по&nbsp;болотам,
+                        у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца
+                        19&nbsp;века. Было очень интересно!
+                      </p>
+                      <p>
+                        Инструктор Федор дружелюбный, внимательный
+                        к&nbsp;технике безопасности и&nbsp;своим туристам.
+                        Всем советую этот тур.
+                      </p>
+                    </div>
+                    <p class="reviews__source">
+                      <span class="reviews__author">Иван Соловьев</span>
+                      25&nbsp;лет, Владивосток
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
       <footer></footer>

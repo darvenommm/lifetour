@@ -1,0 +1,164 @@
+.reviews {
+  padding-bottom: 132px;
+
+  @include tablet {
+    position: relative;
+
+    padding-bottom: 85px;
+  }
+
+  @include mobile {
+    margin-bottom: 67px;
+  }
+}
+
+.reviews__container {
+  width: 1320px;
+
+  @include tablet {
+    width: calc(100% + $tablet-padding);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 33px;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__title {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 100%;
+
+  @include tablet {
+    font-size: 25px;
+  }
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+.reviews__slides {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__slide {
+  display: flex;
+  gap: 0 30px;
+
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+
+  flex-shrink: 0;
+  max-width: 790px;
+  padding: 20px;
+
+  picture {
+    display: flex;
+
+    flex-shrink: 0;
+    width: 258px;
+    height: 253px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+    object-fit: fill;
+  }
+
+  @include tablet {
+    picture {
+      width: 186px;
+      height: 237px;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+
+    picture {
+      aspect-ratio: 1 / 0.68;
+
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.reviews__texts {
+  margin-bottom: 24px;
+
+  p {
+    font-size: 14px;
+    line-height: 157.14%;
+
+    margin: 0;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 25px;
+
+    p {
+      font-size: 12px;
+      line-height: 150%;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__source {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+
+  margin: 0;
+}
+
+.reviews__author {
+  display: block;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
+
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 12px;
+
+    margin-bottom: 6px;
+  }
+
+  @include mobile {
+    margin-bottom: 8px;
+  }
+}

@@ -1492,7 +1492,7 @@ button {
   opacity: 0.1;
 }
 
-.button {
+.button, .arrow {
   display: inline-block;
   color: #ffffff;
   line-height: 100%;
@@ -1506,24 +1506,30 @@ button {
   padding: 21px 10px;
   width: 220px;
 }
-.button:hover:not([disabled]) {
+.button:hover:not([disabled]), .arrow:hover:not([disabled]) {
   color: #1c3374;
   background-color: #ffffff;
   border: 1px solid #1c3374;
 }
-.button:focus-visible:not([disabled]) {
+.button:focus-visible:not([disabled]), .arrow:focus-visible:not([disabled]) {
   color: #1c3374;
   background-color: #ffffff;
   border: 1px solid #1c3374;
 }
-.button:active:not([disabled]) {
+.button:active:not([disabled]), .arrow:active:not([disabled]) {
   color: #ffffff;
   background-color: #1c3374;
   border-color: #1c3374;
 }
-.button[disabled] {
+.button[disabled], [disabled].arrow {
   background-color: rgba(2, 102, 193, 0.1);
   cursor: not-allowed;
+}
+
+.arrow {
+  width: 37px;
+  height: 35px;
+  padding: 0;
 }
 
 .secondary-button {
@@ -3120,6 +3126,183 @@ button {
   .about-us__texts p {
     line-height: 142.86%;
     margin-bottom: 41px;
+  }
+}
+
+.reviews {
+  padding-bottom: 132px;
+}
+@media (max-width: 1199px) {
+  .reviews {
+    position: relative;
+    padding-bottom: 85px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews {
+    margin-bottom: 67px;
+  }
+}
+
+.reviews__container {
+  width: 1320px;
+}
+@media (max-width: 1199px) {
+  .reviews__container {
+    width: calc(100% + 45px);
+  }
+}
+@media (max-width: 767px) {
+  .reviews__container {
+    width: 100%;
+  }
+}
+
+.reviews__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 1199px) {
+  .reviews__header {
+    margin-bottom: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__header {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__title {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 100%;
+}
+@media (max-width: 1199px) {
+  .reviews__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__title {
+    font-size: 22px;
+  }
+}
+
+.reviews__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+          box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 790px;
+  padding: 20px;
+}
+.reviews__slide picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 258px;
+  height: 253px;
+}
+.reviews__slide img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+@media (max-width: 1199px) {
+  .reviews__slide picture {
+    width: 186px;
+    height: 237px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .reviews__slide picture {
+    aspect-ratio: 1/0.68;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.reviews__texts {
+  margin-bottom: 24px;
+}
+.reviews__texts p {
+  font-size: 14px;
+  line-height: 157.14%;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.reviews__texts p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .reviews__texts {
+    margin-bottom: 25px;
+  }
+  .reviews__texts p {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__texts {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__source {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  margin: 0;
+}
+
+.reviews__author {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+@media (max-width: 1199px) {
+  .reviews__author {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__author {
+    margin-bottom: 8px;
   }
 }
 

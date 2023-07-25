@@ -6,6 +6,7 @@ import {initHeroSlider} from './modules/hero/slider';
 import {addHeroVideoHandlers} from './modules/hero/video';
 import {initToursSlider} from './modules/tours/init-tours-slider';
 import {initLearningSlider} from './modules/learning/init-learning-slider';
+import {initReviewsSlider} from './modules/reviews/init-reviews-slider';
 
 // ---------------------------------
 
@@ -30,6 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initToursSlider();
 
     initLearningSlider();
+
+    initReviewsSlider();
 
     const form = new Form();
     window.form = form;
