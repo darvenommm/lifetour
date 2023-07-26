@@ -233,6 +233,15 @@
   margin-bottom: 7px;
 }
 
+.tours__link-container {
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    display: block;
+  }
+}
+
 .tours__link {
   display: flex;
   justify-content: center;

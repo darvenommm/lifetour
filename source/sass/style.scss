@@ -2,8 +2,10 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
+// Swiper 10.0.4
 @import "vendor/swiper";
+// leaflet 1.9.4
+@import "vendor/leaflet";
 
 // Global
 // ---------------------------------
@@ -34,6 +36,7 @@
 @import "blocks/benefits";
 @import "blocks/gallery";
 @import "blocks/question";
+@import "blocks/contacts";
 
 // ---------------------------------
 

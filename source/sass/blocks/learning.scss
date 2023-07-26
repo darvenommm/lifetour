@@ -1,8 +1,6 @@
 .learning {
   position: relative;
 
-  // overflow-x: hidden;
-
   padding-bottom: 127px;
 
   & > picture {
@@ -205,9 +203,29 @@
   align-items: center;
   justify-content: center;
 
+  transition:
+    color $trans-default,
+    border-color $trans-default,
+    background-color $trans-default;
+
   width: 24px;
   height: 24px;
   border: 1px solid #e6f0f9;
+
+  @include hover-focus {
+    border-color: $color-default-text;
+  }
+
+  @include active {
+    color: $color-default-text-antagonist;
+
+    background-color: #0266c1;
+    border-color: #0266c1;
+  }
+
+  @include disabled {
+    opacity: 0.2;
+  }
 }
 
 .learning__slide-text {

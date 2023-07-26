@@ -9,6 +9,7 @@ import {initLearningSlider} from './modules/learning/init-learning-slider';
 import {initReviewsSlider} from './modules/reviews/init-reviews-slider';
 import {initBenefitsSlider} from './modules/benefits/init-benefits-slider';
 import {initGallerySlider} from './modules/gallery/init-gallery-slider';
+import {initContactsMap} from './modules/contacts/init-contacts-map';
 
 // ---------------------------------
 
@@ -36,11 +37,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initReviewsSlider();
 
-    if (window.matchMedia('(min-width: 1200px)').matches) {
-      initBenefitsSlider();
-    }
+    initBenefitsSlider();
 
     initGallerySlider();
+
+    initContactsMap();
 
     const form = new Form();
     window.form = form;

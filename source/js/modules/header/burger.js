@@ -12,24 +12,48 @@ export const activateBurger = () => {
     return;
   }
 
+  const headerOuterClickHandler = (event) => {
+    const target = event.target;
+
+    if (target === header) {
+      closeHeader();
+    }
+  };
+
+  const documentKeydownHandler = (event) => {
+    if (event.key.toLowerCase().startsWith('esc')) {
+      closeHeader();
+    }
+  };
+
+  const closeHeader = () => {
+    header.dataset[BURGER_ACTIVE] = false;
+    burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_CLOSING;
+
+    links.forEach((link) => {
+      link.classList.remove(SHOWED_LINK_CLASS);
+      link.removeEventListener('click', closeHeader);
+      document.removeEventListener('click', headerOuterClickHandler);
+      document.removeEventListener('keydown', documentKeydownHandler);
+    });
+  };
+
+  const openHeader = () => {
+    header.dataset[BURGER_ACTIVE] = true;
+    burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_OPENING;
+
+    links.forEach((link) => {
+      link.classList.add(SHOWED_LINK_CLASS);
+      link.addEventListener('click', closeHeader);
+      document.addEventListener('click', headerOuterClickHandler);
+      document.addEventListener('keydown', documentKeydownHandler);
+    });
+  };
+
   header.dataset[BURGER_ACTIVE] = false;
   burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_CLOSING;
 
   burger.addEventListener('click', () => {
-    if (header.dataset[BURGER_ACTIVE] === 'false') {
-      header.dataset[BURGER_ACTIVE] = true;
-      burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_OPENING;
-
-      links.forEach((link) => {
-        link.classList.add(SHOWED_LINK_CLASS);
-      });
-    } else {
-      header.dataset[BURGER_ACTIVE] = false;
-      burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_CLOSING;
-
-      links.forEach((link) => {
-        link.classList.remove(SHOWED_LINK_CLASS);
-      });
-    }
+    (header.dataset[BURGER_ACTIVE] === 'false' ? openHeader : closeHeader)();
   });
 };
