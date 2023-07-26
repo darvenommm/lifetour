@@ -1560,6 +1560,66 @@ button {
   cursor: not-allowed;
 }
 
+.text-input input {
+  color: #2d383f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  background-color: #ffffff;
+  padding: 24px 30px;
+}
+.text-input input::-webkit-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.text-input input::-moz-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.text-input input:-ms-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.text-input input::-ms-input-placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.text-input input::placeholder {
+  color: rgba(45, 56, 63, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+@media (max-width: 1199px) {
+  .text-input input {
+    font-size: 14px;
+    padding: 18px 15px;
+  }
+  .text-input input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .text-input input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .text-input input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .text-input input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .text-input input::placeholder {
+    font-size: 14px;
+  }
+}
+
 .audio {
   color: #1c3374;
   background-color: rgba(245, 246, 250, 0.9);
@@ -3612,6 +3672,152 @@ button {
 .gallery__slide img {
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.question {
+  position: relative;
+  color: #ffffff;
+  padding-top: 308px;
+  padding-bottom: 307px;
+}
+.question picture {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.question img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+@media (max-width: 1199px) {
+  .question {
+    padding-top: 192px;
+    padding-bottom: 183px;
+  }
+}
+@media (max-width: 767px) {
+  .question {
+    padding-top: 181px;
+    padding-bottom: 175px;
+  }
+}
+
+.question__title {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .question__title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .question__title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+}
+
+.question__description {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 42px;
+}
+@media (max-width: 1199px) {
+  .question__description {
+    width: 44.25%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .question__description {
+    font-size: 12px;
+    margin-bottom: 26px;
+    width: 100%;
+  }
+}
+
+.question__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .question__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7px;
+    width: 260px;
+  }
+}
+@media (max-width: 767px) {
+  .question__form {
+    width: 100%;
+  }
+}
+
+.question__text-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  width: 340px;
+}
+.question__text-input span {
+  color: #ff1553;
+}
+@media (max-width: 1199px) {
+  .question__text-input {
+    width: 100%;
+  }
+  .question__text-input--last {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .question__text-input--last {
+    margin-bottom: 1px;
+  }
+}
+
+.question__submit {
+  padding: 25px 10px;
+  width: 236px;
+}
+@media (max-width: 1199px) {
+  .question__submit {
+    padding: 23px 21px;
+    width: 100%;
+  }
 }
 
 /* @mixin hover-focus {

@@ -1644,6 +1644,108 @@
             </div>
           </div>
         </section>
+        <section
+          class="question"
+          data-form-validate
+          data-callback="base"
+        >
+          <div class="container">
+            <h2 class="question__title">Остались вопросы?</h2>
+            <p class="question__description">
+              Заполните форму и&nbsp;наш оператор свяжется
+              с&nbsp;вами для консультации.
+            </p>
+            <form
+              class="question__form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              autocomplete="off"
+            >
+              <div
+                class="question__text-input text-input"
+                data-validate-type="text"
+                data-limitation="letters"
+                data-message-base="Поле обязательно к заполнению!"
+                data-message-extra="Проверьте корректность заполнения поля!"
+                data-required
+              >
+                <label class="visually-hidden" for="question__name">
+                  Как к вам обращаться?
+                </label>
+                <input
+                  id="question__name"
+                  type="text"
+                  name="name"
+                  placeholder="Как к вам обращаться?"
+                  autocapitalize="on"
+                  minlength="1"
+                  required
+                >
+              </div>
+              <div
+                class="question__text-input question__text-input--last text-input"
+                data-validate-type="phone"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля"
+                data-required
+              >
+                <label class="visually-hidden" for="question__phone">
+                  Ваш номер телефона.
+                </label>
+                <input
+                  id="question__phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон"
+                  pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                  required
+                >
+              </div>
+              <button class="question__submit button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              width="0"
+              height="0"
+              srcset="./img/question/background-phone@2x.webp 2x, ./img/question/background-phone@1x.webp 1x"
+              type="image/webp"
+            >
+            <source
+              media="(max-width: 767px)"
+              width="0"
+              height="0"
+              srcset="./img/question/background-phone@2x.jpg 2x, ./img/question/background-phone@1x.jpg 1x"
+            >
+            <source
+              media="(max-width: 1199px)"
+              width="0"
+              height="0"
+              srcset="./img/question/background-tablet@2x.webp 2x, ./img/question/background-tablet@1x.webp 1x"
+              type="image/webp"
+            >
+            <source
+              media="(max-width: 1199px)"
+              width="0"
+              height="0"
+              srcset="./img/question/background-tablet@2x.jpg 2x, ./img/question/background-tablet@1x.jpg 1x"
+            >
+            <source
+              width="0"
+              height="0"
+              srcset="./img/question/background-desktop@2x.webp 2x, ./img/question/background-desktop@1x.webp 1x"
+              type="image/webp"
+            >
+            <img
+              width="0"
+              height="0"
+              srcset="./img/question/background-desktop@2x.jpg 2x, ./img/question/background-desktop@1x.jpg 1x"
+              src="./img/question/background-desktop@1x.jpg"
+              alt="Фоновое изображение."
+            >
+          </picture>
+        </section>
       </main>
       <footer></footer>
     </div>
