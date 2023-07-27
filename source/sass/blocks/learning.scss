@@ -203,29 +203,8 @@
   align-items: center;
   justify-content: center;
 
-  transition:
-    color $trans-default,
-    border-color $trans-default,
-    background-color $trans-default;
-
   width: 24px;
   height: 24px;
-  border: 1px solid #e6f0f9;
-
-  @include hover-focus {
-    border-color: $color-default-text;
-  }
-
-  @include active {
-    color: $color-default-text-antagonist;
-
-    background-color: #0266c1;
-    border-color: #0266c1;
-  }
-
-  @include disabled {
-    opacity: 0.2;
-  }
 }
 
 .learning__slide-text {
@@ -273,7 +252,7 @@
     left: -2000px;
     right: -2000px;
 
-    background-color: #0266c1;
+    background-color: $color-neon-blue;
     opacity: 0.1;
 
     height: 1px;
@@ -325,7 +304,7 @@
     position: absolute;
     bottom: -38px;
 
-    background-color: #0266c1;
+    background-color: $color-neon-blue;
     border-radius: 50%;
 
     width: 14px;
@@ -357,7 +336,7 @@
         right: 100%;
         left: -2000px;
 
-        background-color: #0266c1;
+        background-color: $color-neon-blue;
         opacity: 0.1;
 
         height: 1px;
@@ -385,7 +364,7 @@
         top: -91px;
         left: 6px;
 
-        background-color: #0266c1;
+        background-color: $color-neon-blue;
         opacity: 0.1;
 
         width: 1px;

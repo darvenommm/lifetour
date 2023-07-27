@@ -6,14 +6,35 @@
     line-height: 100%;
 
     background-color: $color-default-bg;
+    transition: border-color $trans-default-time;
 
-    padding: 24px 30px;
+    border: 2px solid $color-transparent;
+    padding: 22px 30px;
 
     &::placeholder {
       color: rgba($color-default-text, 0.5);
       font-size: 16px;
       font-weight: 400;
       line-height: 100%;
+
+      transition: color $trans-default-time;
+    }
+
+    @include hover {
+      border-color: $color-neon-blue;
+
+      &::placeholder {
+        color: $color-neon-blue;
+      }
+    }
+
+    @include active-focus {
+      border-color: $color-default-text;
+    }
+
+    @include disabled {
+      opacity: 0.1;
+      cursor: not-allowed;
     }
 
     @include tablet {
@@ -24,6 +45,12 @@
       &::placeholder {
         font-size: 14px;
       }
+    }
+  }
+
+  &.is-invalid {
+    input {
+      border-color: #ff121f;
     }
   }
 }

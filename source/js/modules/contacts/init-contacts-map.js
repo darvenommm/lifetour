@@ -3,7 +3,7 @@ import {map as createMap, tileLayer as createTileLayer, icon as createIcon, mark
 export const initContactsMap = () => {
   const CONTAINER_SELECTOR = '.contacts__map';
   const COORDINATES = [55.774864, 37.632545];
-  const ZOOM = 17;
+  const ZOOM = 15;
   const URL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
   const MARKER_TEXT = 'г. Москва, пр-т Мира, д.&nbsp;14, офис 101';
   const ICON_URL = './img/svg/map-icon.svg';
@@ -17,6 +17,7 @@ export const initContactsMap = () => {
     zoom: ZOOM,
     scrollWheelZoom: false,
     dragging: false,
+    keyboard: false,
   });
 
   const icon = createIcon({

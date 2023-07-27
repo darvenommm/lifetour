@@ -1,0 +1,23 @@
+.icon-link {
+  transition:
+    color $trans-default,
+    border-color $trans-default,
+    background-color $trans-default;
+
+  border: 1px solid #e6f0f9;
+
+  @include hover-focus {
+    border-color: $color-default-text;
+  }
+
+  @include active {
+    color: $color-default-text-antagonist;
+
+    background-color: $color-neon-blue;
+    border-color: $color-neon-blue;
+  }
+
+  @include disabled {
+    opacity: 0.2;
+  }
+}

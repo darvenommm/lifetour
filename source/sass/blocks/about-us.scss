@@ -9,7 +9,9 @@
     top: -40px;
     z-index: -2;
 
-    width: 57.75%;
+    display: flex;
+
+    width: 808px;
     height: 474px;
   }
 
@@ -21,16 +23,7 @@
   @include tablet {
     picture {
       top: -150px;
-      width: 72%;
-    }
-  }
-
-  @include vp-800 {
-    picture {
-      top: 20px;
-
-      width: 71.61%;
-      height: 402px;
+      width: 476px;
     }
   }
 
@@ -41,7 +34,7 @@
     picture {
       top: -46px;
 
-      width: 346px;
+      width: 320px;
     }
   }
 }

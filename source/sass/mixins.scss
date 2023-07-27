@@ -32,6 +32,16 @@
   }
 }
 
+@mixin active-focus {
+  @include active {
+    @content;
+  }
+
+  @include focus {
+    @content;
+  }
+}
+
 @mixin disabled {
   &[disabled] {
     @content;
@@ -41,12 +51,6 @@
 // viewport media
 @mixin tablet {
   @media (max-width: ($vp-1200 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-800 {
-  @media (max-width: ($vp-800 - 1px)) {
     @content;
   }
 }

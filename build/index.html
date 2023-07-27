@@ -23,7 +23,7 @@
                 <use xlink:href="./img/sprite.svg#close-burger"></use>
               </svg>
             </button>
-            <a class="header__logo" href="/">
+            <a class="header__logo" href="./">
               <span class="visually-hidden">Логотип нашего сайта.</span>
               <svg width="205" height="62">
                 <use xlink:href="./img/sprite.svg#logo"></use>
@@ -768,7 +768,7 @@
                   <div class="learning__slide-metadata">
                     <h4 class="learning__slide-title">Александр Прокофьев</h4>
                     <a
-                      class="learning__slide-link"
+                      class="learning__slide-link icon-link"
                       href="#"
                       aria-label="Аккаунт во Вконтакте инструктора."
                     >
@@ -801,7 +801,7 @@
                   <div class="learning__slide-metadata">
                     <h4 class="learning__slide-title">Светлана Афиногенова</h4>
                     <a
-                      class="learning__slide-link"
+                      class="learning__slide-link icon-link"
                       href="#"
                       aria-label="Аккаунт во Вконтакте инструктора."
                     >
@@ -835,7 +835,7 @@
                   <div class="learning__slide-metadata">
                     <h4 class="learning__slide-title">Надежда Колесниченко</h4>
                     <a
-                      class="learning__slide-link"
+                      class="learning__slide-link icon-link"
                       href="#"
                       aria-label="Аккаунт во Вконтакте инструктора."
                     >
@@ -869,7 +869,7 @@
                   <div class="learning__slide-metadata">
                     <h4 class="learning__slide-title">Федор Кайгородов</h4>
                     <a
-                      class="learning__slide-link"
+                      class="learning__slide-link icon-link"
                       href="#"
                       aria-label="Аккаунт во Вконтакте инструктора."
                     >
@@ -903,7 +903,7 @@
                   <div class="learning__slide-metadata">
                     <h4 class="learning__slide-title">Федор Кайгородов</h4>
                     <a
-                      class="learning__slide-link"
+                      class="learning__slide-link icon-link"
                       href="#"
                       aria-label="Аккаунт во Вконтакте инструктора."
                     >
@@ -1002,10 +1002,10 @@
             >
           </picture>
         </section>
-        <section class="about-us" id="about-us">
+        <section class="about-us">
           <div class="about-us__container container">
             <div class="about-us__content">
-              <h2 class="about-us__title">О&nbsp;нас</h2>
+              <h2 class="about-us__title" id="about-us">О&nbsp;нас</h2>
               <div class="about-us__texts">
                 <h3>История компании</h3>
                 <p>
@@ -1699,7 +1699,7 @@
                   type="tel"
                   name="phone"
                   placeholder="Телефон"
-                  pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                  pattern="^\d{11}$"
                   required
                 >
               </div>
@@ -1829,7 +1829,7 @@
                     width="585"
                     height="324"
                     srcset="./img/map/map-desktop@2x.jpg 2x, ./img/map/map-desktop@1x.jpg 1x"
-                    src="./img/map/map-desktop@1x.jpg 1x"
+                    src="./img/map/map-desktop@1x.jpg"
                     alt="Адрес: г. Москва, пр-т Мира, д. 14, офис 101"
                   >
                 </picture>
@@ -1838,7 +1838,81 @@
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <a class="footer__logo" href="./">
+              <span class="visually-hidden">Логотип нашего сайта.</span>
+              <svg width="205" height="60">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="footer__links">
+              <li class="footer__link-item footer__link-item--tours">
+                <a class="footer__link link link--on-light" href="#tours">Туры</a>
+              </li>
+              <li class="footer__link-item footer__link-item--learning">
+                <a class="footer__link link link--on-light" href="#learning">Обучение</a>
+              </li>
+              <li class="footer__link-item footer__link-item--about-us">
+                <a class="footer__link link link--on-light" href="#about-us">О&nbsp;нас</a>
+              </li>
+              <li class="footer__link-item footer__link-item--reviews">
+                <a class="footer__link link link--on-light" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__link-item footer__link-item--gallery">
+                <a class="footer__link link link--on-light" href="#gallery">Фотографии</a>
+              </li>
+              <li class="footer__link-item footer__link-item--contacts">
+                <a class="footer__link link link--on-light" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <a class="footer__tel secondary-link" href="tel:78007253232">8 800 725 32 32</a>
+          </div>
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a
+                class="footer__social icon-link"
+                href="https://vk.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden"></span>
+                <svg width="16" height="9" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                class="footer__social icon-link"
+                href="https://ok.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden"></span>
+                <svg width="9" height="16" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                class="footer__social icon-link"
+                href="https://www.reddit.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden"></span>
+                <svg width="14" height="15" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__bottom">Политика конфиденциальности</p>
+        </div>
+      </footer>
     </div>
     <script src="./js/vendor.min.js" defer></script>
     <script src="./js/main.min.js" defer></script>
