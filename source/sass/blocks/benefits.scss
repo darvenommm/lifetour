@@ -80,12 +80,19 @@
 
   @include tablet {
     padding: 30px 20px;
-    width: 47.7%;
+
+    /* stylelint-disable declaration-no-important */
+    // for removing a dynamic width from swiper's inline style attribute
+    width: 47.7% !important;
+    margin-right: 0 !important;
+    /* stylelint-enable declaration-no-important */
   }
 
   @include mobile {
     padding: 20px 10px;
-    width: 100%;
+    // for removing a dynamic width from swiper's inline style attribute
+    /* stylelint-disable-next-line declaration-no-important */
+    width: 100% !important;
   }
 }
 
