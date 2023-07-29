@@ -36,7 +36,7 @@
   }
 
   @include mobile {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -55,6 +55,8 @@
   }
 
   @include mobile {
+    top: 0;
+
     font-size: 22px;
   }
 }
@@ -100,13 +102,17 @@
 
   @include mobile {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 
     picture {
       aspect-ratio: 1 / 0.68;
 
       width: 100%;
       height: auto;
+    }
+
+    img {
+      aspect-ratio: 1 / 0.68;
     }
   }
 }

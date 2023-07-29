@@ -114,6 +114,7 @@
 
   @include mobile {
     min-width: 290px;
+    padding-bottom: 22px;
   }
 }
 
@@ -133,6 +134,7 @@
   }
 
   @include vp-400 {
+    gap: 16px 23px;
     justify-content: start;
   }
 }
@@ -253,6 +255,10 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 100%;
+
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 .tours__link {

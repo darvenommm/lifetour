@@ -67,6 +67,7 @@ $hero__background-time: 300ms;
 
   @include mobile {
     padding-top: 70px + ($header-height-mobile);
+    padding-bottom: 18px;
     margin-top: (-$header-height-mobile);
   }
 }
@@ -146,6 +147,7 @@ $hero__background-time: 300ms;
 
     @include mobile {
       font-size: 15px;
+      line-height: 133.33%;
     }
   }
 
@@ -169,6 +171,10 @@ $hero__background-time: 300ms;
 
     width: 209px;
     margin: 0 auto;
+  }
+
+  @include mobile {
+    width: 180px;
   }
 }
 
@@ -329,7 +335,7 @@ $hero__background-time: 300ms;
   }
 
   @include mobile {
-    bottom: 12px;
+    bottom: 32px;
   }
 }
 

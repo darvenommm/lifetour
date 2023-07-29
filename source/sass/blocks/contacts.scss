@@ -8,7 +8,7 @@
   }
 
   @include mobile {
-    padding-top: 66px;
+    padding-top: 70px;
     padding-bottom: 33px;
   }
 }
@@ -178,7 +178,7 @@
   }
 
   @include mobile {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 0.91 / 1;
   }
 }
 
@@ -190,6 +190,12 @@
   @include tablet {
     font-size: 14px;
     line-height: 157.14%;
+  }
+
+  @include mobile {
+    line-height: 142.86%;
+
+    width: 60%;
   }
 }
 

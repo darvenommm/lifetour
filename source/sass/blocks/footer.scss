@@ -11,6 +11,7 @@
   @include mobile {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-left: 5px;
   }
 }
 
@@ -31,8 +32,9 @@
   @include mobile {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
 
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 }
 
@@ -104,7 +106,7 @@
   @include mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px 10px;
+    gap: 5px 31px;
   }
 }
 
@@ -168,6 +170,10 @@
   @include tablet {
     margin-bottom: 23px;
   }
+
+  @include mobile {
+    justify-content: start;
+  }
 }
 
 .footer__social {
@@ -188,4 +194,8 @@
   line-height: 100%;
 
   margin: 0;
+
+  @include mobile {
+    justify-content: start;
+  }
 }

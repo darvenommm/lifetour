@@ -36,4 +36,8 @@
     background-color: rgba(2, 102, 193, 0.1);
     cursor: not-allowed;
   }
+
+  @include mobile {
+    padding: 17px 10px;
+  }
 }

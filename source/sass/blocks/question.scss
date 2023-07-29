@@ -26,7 +26,7 @@
   }
 
   @include mobile {
-    padding-top: 181px;
+    padding-top: 176px;
     padding-bottom: 175px;
   }
 }
@@ -140,5 +140,9 @@
   @include tablet {
     padding: 23px 21px;
     width: 100%;
+  }
+
+  @include mobile {
+    padding: 17px 21px;
   }
 }
