@@ -44,9 +44,11 @@
   margin-bottom: 20px;
 
   @include tablet {
+    left: 0;
+
     font-size: 25px;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   @include mobile {
@@ -68,6 +70,8 @@
   margin-bottom: 42px;
 
   @include tablet {
+    left: 0;
+
     width: 44.25%;
 
     margin: 0 auto;

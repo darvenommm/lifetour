@@ -21,9 +21,12 @@
   }
 
   @include tablet {
+    padding-bottom: 69px;
+
     picture {
-      top: -150px;
+      top: 7px;
       width: 476px;
+      height: 402px;
     }
   }
 
@@ -49,7 +52,7 @@
   width: 48.75%;
 
   @include tablet {
-    width: 46.62%;
+    width: 47.62%;
   }
 
   @include mobile {

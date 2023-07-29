@@ -23,13 +23,14 @@
   margin-bottom: 16px;
 
   @include tablet {
+    gap: 20px;
+
     margin-bottom: 37px;
   }
 
   @include mobile {
     flex-direction: column;
     align-items: stretch;
-    gap: 20px;
 
     margin-bottom: 30px;
   }
@@ -96,6 +97,8 @@
     left: 0;
 
     gap: 20px;
+
+    padding-right: 7px;
   }
 
   @include mobile {
@@ -126,6 +129,8 @@
   padding: 15px 0;
 
   @include tablet {
+    font-size: 14px;
+
     padding: 10px 0;
   }
 
@@ -159,6 +164,10 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
 }
 
 .footer__social {

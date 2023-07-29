@@ -53,4 +53,10 @@
       border-color: #ff121f;
     }
   }
+
+  @include tablet {
+    input {
+      padding: 14px 15px;
+    }
+  }
 }

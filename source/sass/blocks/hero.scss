@@ -61,6 +61,7 @@ $hero__background-time: 300ms;
 
   @include tablet {
     padding-top: 100px + ($header-height-tablet);
+    padding-bottom: 72px;
     margin-top: (-$header-height-tablet);
   }
 
@@ -166,6 +167,7 @@ $hero__background-time: 300ms;
   @include tablet {
     display: block;
 
+    width: 209px;
     margin: 0 auto;
   }
 }

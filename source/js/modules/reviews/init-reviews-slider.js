@@ -18,7 +18,7 @@ export const initReviewsSlider = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 1.2,
+        slidesPerView: 1.28,
       },
       1200: {
         slidesPerView: 1.6,

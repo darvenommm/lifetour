@@ -130,6 +130,7 @@ $header__menu-trans-time: 300ms;
   @include tablet {
     width: 144px;
     height: 44px;
+    margin-left: 100px;
   }
 
   @include mobile {
