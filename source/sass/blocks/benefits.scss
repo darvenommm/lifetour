@@ -1,5 +1,5 @@
 .benefits {
-  padding-bottom: 107px;
+  padding-bottom: 126px;
 
   @include tablet {
     padding-bottom: 85px;
@@ -21,7 +21,7 @@
   text-align: center;
 
   margin: 0;
-  margin-bottom: 51px;
+  margin-bottom: 48px;
 
   @include tablet {
     font-size: 25px;
@@ -37,7 +37,7 @@
 }
 
 .benefits__slider {
-  margin-left: -405px;
+  margin-left: -410px;
   margin-bottom: 50px;
   width: (380px * 5 + 30px * 4);
 

@@ -1,6 +1,6 @@
 .tours {
   padding-top: 121px;
-  padding-bottom: 102px;
+  padding-bottom: 123px;
 
   @include tablet {
     padding-top: 85px;
@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 58px;
+  margin-bottom: 49px;
 
   @include tablet {
     margin-bottom: 46px;
@@ -90,6 +90,7 @@
   min-width: 380px;
   min-height: 412px;
   padding: 28px 20px;
+  padding-right: 25px;
 
   picture {
     position: absolute;
@@ -139,11 +140,11 @@
 .tours__slide-place {
   display: flex;
   align-items: center;
-  gap: 0 6px;
+  gap: 0 3px;
 
   background-color: $color-neon-blue;
 
-  padding: 8px 25px;
+  padding: 8px 22px;
   margin: 0;
 
   @include tablet {
@@ -203,6 +204,10 @@
 .tours__slide-difficult {
   position: relative;
 
+  svg {
+    margin-right: -2px;
+  }
+
   &::before {
     position: absolute;
     top: -21px;
@@ -240,6 +245,14 @@
   @include mobile {
     display: block;
   }
+}
+
+.tours__slide-difficult,
+.tours__slide-date,
+.tours__slide-group {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 .tours__link {

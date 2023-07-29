@@ -53,7 +53,7 @@ $header__menu-trans-time: 300ms;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0 10px;
+  gap: 0 50px;
 }
 
 .header__navigation {
@@ -140,7 +140,7 @@ $header__menu-trans-time: 300ms;
 
 .header__links {
   display: flex;
-  gap: 15px 15px;
+  gap: 15px;
   flex-wrap: wrap;
 
   list-style: none;
@@ -185,6 +185,7 @@ $header__menu-trans-time: 300ms;
   line-height: 100%;
   font-weight: 600;
 
+  flex-shrink: 0;
   padding: 20px 0;
 
   @include tablet {

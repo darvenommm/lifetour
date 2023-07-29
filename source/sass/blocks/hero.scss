@@ -8,7 +8,7 @@ $hero__background-time: 300ms;
   background-color: $color-polo-blue;
 
   padding-top: 80px + ($header-height-desktop);
-  padding-bottom: 80px;
+  padding-bottom: 78px;
   margin-top: (-$header-height-desktop);
 
   .hero__first-background,
@@ -270,7 +270,7 @@ $hero__background-time: 300ms;
 .hero__cards {
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 21px;
 
   @include tablet {
     position: static;
@@ -308,11 +308,11 @@ $hero__background-time: 300ms;
 .hero__paginations {
   position: absolute;
   right: 2px;
-  bottom: 10px;
+  bottom: 27px;
   z-index: 2;
 
   display: flex;
-  gap: 10px;
+  gap: 14px;
   justify-content: end;
 
   list-style: none;

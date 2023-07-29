@@ -2293,7 +2293,7 @@ button {
   cursor: pointer;
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
-  padding: 14px 20px;
+  padding: 12px 17px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .secondary-button svg {
@@ -2321,7 +2321,7 @@ button {
   -webkit-transition: border-color 200ms;
   transition: border-color 200ms;
   border: 2px solid rgba(255, 255, 255, 0);
-  padding: 22px 30px;
+  padding: 19px 30px;
 }
 .text-input input::-webkit-input-placeholder {
   color: rgba(45, 56, 63, 0.5);
@@ -2622,7 +2622,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 10px;
+  gap: 0 50px;
 }
 
 @media (max-width: 1199px) {
@@ -2711,7 +2711,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px 15px;
+  gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
@@ -2758,6 +2758,8 @@ button {
   font-size: 18px;
   line-height: 100%;
   font-weight: 600;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding: 20px 0;
 }
 @media (max-width: 1199px) {
@@ -2800,7 +2802,7 @@ button {
   color: #ffffff;
   background-color: #89a6ca;
   padding-top: 182px;
-  padding-bottom: 80px;
+  padding-bottom: 78px;
   margin-top: -102px;
 }
 .hero .hero__first-background,
@@ -3064,7 +3066,7 @@ button {
 .hero__cards {
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 21px;
 }
 @media (max-width: 1199px) {
   .hero__cards {
@@ -3107,12 +3109,12 @@ button {
 .hero__paginations {
   position: absolute;
   right: 2px;
-  bottom: 10px;
+  bottom: 27px;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 14px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -3176,7 +3178,7 @@ button {
 
 .tours {
   padding-top: 121px;
-  padding-bottom: 102px;
+  padding-bottom: 123px;
 }
 @media (max-width: 1199px) {
   .tours {
@@ -3201,7 +3203,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 58px;
+  margin-bottom: 49px;
 }
 @media (max-width: 1199px) {
   .tours__top {
@@ -3282,6 +3284,7 @@ button {
   min-width: 380px;
   min-height: 412px;
   padding: 28px 20px;
+  padding-right: 25px;
 }
 .tours__slide picture {
   position: absolute;
@@ -3346,9 +3349,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 6px;
+  gap: 0 3px;
   background-color: #0266c1;
-  padding: 8px 25px;
+  padding: 8px 22px;
   margin: 0;
 }
 @media (max-width: 1199px) {
@@ -3426,6 +3429,9 @@ button {
 .tours__slide-difficult {
   position: relative;
 }
+.tours__slide-difficult svg {
+  margin-right: -2px;
+}
 .tours__slide-difficult::before {
   position: absolute;
   top: -21px;
@@ -3463,6 +3469,14 @@ button {
   }
 }
 
+.tours__slide-difficult,
+.tours__slide-date,
+.tours__slide-group {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
 .tours__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3489,12 +3503,12 @@ button {
 
 .learning {
   position: relative;
-  padding-bottom: 127px;
+  padding-bottom: 163px;
 }
 .learning > picture {
   position: absolute;
   right: 0;
-  top: -800px;
+  top: -834px;
   z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3528,7 +3542,7 @@ button {
   font-weight: 800;
   line-height: 100%;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 }
 @media (max-width: 1199px) {
   .learning__title {
@@ -3545,7 +3559,7 @@ button {
 
 .learning__texts {
   width: 68.33%;
-  margin-bottom: 52px;
+  margin-bottom: 47px;
 }
 .learning__texts p {
   font-size: 16px;
@@ -3585,7 +3599,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 @media (max-width: 1199px) {
   .learning__instructors {
@@ -3893,7 +3907,7 @@ button {
 
 .about-us {
   position: relative;
-  padding-bottom: 73px;
+  padding-bottom: 102px;
 }
 .about-us picture {
   position: absolute;
@@ -4053,7 +4067,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 @media (max-width: 1199px) {
   .reviews__header {
@@ -4067,9 +4081,12 @@ button {
 }
 
 .reviews__title {
+  position: relative;
+  top: 10px;
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
+  margin: 0;
 }
 @media (max-width: 1199px) {
   .reviews__title {
@@ -4138,8 +4155,12 @@ button {
   }
 }
 
+.reviews__content {
+  margin-top: 15px;
+}
+
 .reviews__texts {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 .reviews__texts p {
   font-size: 14px;
@@ -4192,7 +4213,7 @@ button {
 }
 
 .benefits {
-  padding-bottom: 107px;
+  padding-bottom: 126px;
 }
 @media (max-width: 1199px) {
   .benefits {
@@ -4215,7 +4236,7 @@ button {
   line-height: 100%;
   text-align: center;
   margin: 0;
-  margin-bottom: 51px;
+  margin-bottom: 48px;
 }
 @media (max-width: 1199px) {
   .benefits__title {
@@ -4231,7 +4252,7 @@ button {
 }
 
 .benefits__slider {
-  margin-left: -405px;
+  margin-left: -410px;
   margin-bottom: 50px;
   width: 2020px;
 }
@@ -4537,6 +4558,8 @@ button {
 }
 
 .question__title {
+  position: relative;
+  left: -9px;
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
@@ -4558,6 +4581,8 @@ button {
 }
 
 .question__description {
+  position: relative;
+  left: -9px;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
@@ -4639,7 +4664,7 @@ button {
 }
 
 .question__submit {
-  padding: 25px 10px;
+  padding: 22px 10px;
   width: 236px;
 }
 @media (max-width: 1199px) {
@@ -4858,6 +4883,12 @@ button {
   }
 }
 
+.contacts__link,
+.contacts__text {
+  font-size: 16px;
+  line-height: 100%;
+}
+
 .leaflet-control-attribution svg {
   /* stylelint-disable-next-line declaration-no-important */
   display: none !important;
@@ -4891,6 +4922,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
   margin-bottom: 16px;
 }
 @media (max-width: 1199px) {
@@ -4922,7 +4954,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 104px;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
@@ -4965,6 +4996,8 @@ button {
 }
 
 .footer__links {
+  position: relative;
+  left: -32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4977,6 +5010,7 @@ button {
 }
 @media (max-width: 1199px) {
   .footer__links {
+    left: 0;
     gap: 20px;
   }
 }
@@ -5045,6 +5079,8 @@ button {
   font-size: 18px;
   font-weight: 600;
   line-height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media (max-width: 1199px) {
   .footer__tel {
@@ -5092,6 +5128,9 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
   margin: 0;
 }
 

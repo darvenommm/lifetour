@@ -1,12 +1,12 @@
 .learning {
   position: relative;
 
-  padding-bottom: 127px;
+  padding-bottom: 163px;
 
   & > picture {
     position: absolute;
     right: 0;
-    top: -800px;
+    top: -834px;
     z-index: -2;
 
     display: flex;
@@ -46,7 +46,7 @@
   line-height: 100%;
 
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 
   @include tablet {
     font-size: 25px;
@@ -63,7 +63,7 @@
 
 .learning__texts {
   width: 68.33%;
-  margin-bottom: 52px;
+  margin-bottom: 47px;
 
   p {
     font-size: 16px;
@@ -98,7 +98,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 
   @include tablet {
     margin-bottom: 24px;

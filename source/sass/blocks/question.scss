@@ -32,6 +32,9 @@
 }
 
 .question__title {
+  position: relative;
+  left: -9px;
+
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
@@ -54,6 +57,9 @@
 }
 
 .question__description {
+  position: relative;
+  left: -9px;
+
   font-size: 16px;
   line-height: 150%;
   text-align: center;
@@ -124,7 +130,7 @@
 }
 
 .question__submit {
-  padding: 25px 10px;
+  padding: 22px 10px;
   width: 236px;
 
   @include tablet {
