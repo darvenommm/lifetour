@@ -3,7 +3,7 @@
   padding-bottom: 141px;
 
   @include tablet {
-    padding-top: 85px;
+    padding-top: 90px;
     padding-bottom: 70px;
   }
 
@@ -141,6 +141,10 @@
   line-height: 100%;
 
   margin: 0;
+
+  @include tablet {
+    margin-bottom: 4px;
+  }
 
   @include mobile {
     font-size: 14px;

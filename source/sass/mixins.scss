@@ -49,6 +49,18 @@
 }
 
 // viewport media
+@mixin vpm-2500 {
+  @media (min-width: ($vp-2500 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vpm-2000 {
+  @media (min-width: ($vp-2000 - 1px)) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: ($vp-1200 - 1px)) {
     @content;

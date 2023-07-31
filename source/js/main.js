@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {activateBurger} from './modules/header/burger';
 import {initHeroSlider} from './modules/hero/slider';
 import {addHeroVideoHandlers} from './modules/hero/video';
+import {addAudioHandlers} from './modules/hero/audio';
 import {initToursSlider} from './modules/tours/init-tours-slider';
 import {initLearningSlider} from './modules/learning/init-learning-slider';
 import {initReviewsSlider} from './modules/reviews/init-reviews-slider';
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initHeroSlider();
     addHeroVideoHandlers();
+    addAudioHandlers();
 
     initToursSlider();
 

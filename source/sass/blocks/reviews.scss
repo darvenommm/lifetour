@@ -98,6 +98,10 @@
       width: 186px;
       height: 237px;
     }
+
+    img {
+      object-fit: cover;
+    }
   }
 
   @include mobile {

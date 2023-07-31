@@ -58,6 +58,14 @@
   @include mobile {
     width: 100%;
   }
+
+  @include vpm-2000 {
+    width: 75%;
+  }
+
+  @include vpm-2500 {
+    width: 100%;
+  }
 }
 
 .about-us__title {

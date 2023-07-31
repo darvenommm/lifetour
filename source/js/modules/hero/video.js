@@ -7,7 +7,7 @@ export const addHeroVideoHandlers = () => {
 
   const src =
     (parent.dataset.src ? parent.dataset.src : 'https://www.youtube-nocookie.com/embed/9TZXsZItgdw')
-    + '?&autoplay=1&rel=0';
+    + '?&autoplay=1&rel=0?enable_js=1&mute=1';
 
   button.addEventListener('click', () => {
     parent.replaceChildren();

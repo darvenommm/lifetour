@@ -76,6 +76,7 @@ $header__menu-trans-time: 300ms;
 
   @include mobile {
     padding: 94px $mobile-padding 45px;
+    padding-left: 10px;
   }
 }
 

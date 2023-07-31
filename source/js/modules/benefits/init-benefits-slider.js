@@ -23,20 +23,23 @@ const createSlider = () => {
   });
 };
 
-let slider = null;
 export const initBenefitsSlider = () => {
-  const breakpoint = window.matchMedia(`(min-width: ${config.tabletWidth}px)`);
+  const firstBreakpoint = window.matchMedia(`(min-width: ${config.tabletWidth}px)`);
+  const secondBreakpoint = window.matchMedia('(min-width: 2000px)');
+  const isValid = () => firstBreakpoint.matches && !secondBreakpoint.matches;
 
-  if (breakpoint.matches) {
+  let slider = null;
+
+  if (isValid()) {
     slider = createSlider();
   }
 
   window.addEventListener('resize', () => {
-    if (breakpoint.matches) {
+    if (isValid()) {
       slider = createSlider();
     } else {
       if (slider) {
-        slider.destroy(true, true);
+        slider.destroy();
         slider = null;
       }
     }

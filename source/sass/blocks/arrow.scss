@@ -1,7 +1,39 @@
 .arrow {
-  @extend .button;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-default-text-antagonist;
+
+  background-color: $color-neon-blue;
+  cursor: pointer;
+  transition:
+    color $trans-default-time,
+    background-color $trans-default-time,
+    border-color $trans-default-time;
+  border: 1px solid transparent;
 
   width: 37px;
   height: 35px;
   padding: 0;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+
+    background-color: #ffffff;
+
+    border: 1px solid $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-default-text-antagonist;
+
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
+  @include disabled {
+    background-color: rgba(2, 102, 193, 0.1);
+    cursor: not-allowed;
+  }
 }

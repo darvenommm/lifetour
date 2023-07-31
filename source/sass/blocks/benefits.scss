@@ -45,6 +45,10 @@
     margin: 0;
     width: auto;
   }
+
+  @include vpm-2000 {
+    margin-bottom: 0;
+  }
 }
 
 .benefits__slides {
@@ -64,6 +68,10 @@
 
   @include mobile {
     gap: 13px;
+  }
+
+  @include vpm-2000 {
+    gap: 30px;
   }
 }
 
@@ -166,6 +174,10 @@
   gap: 0 4px;
 
   @include tablet {
+    display: none;
+  }
+
+  @include vpm-2000 {
     display: none;
   }
 }
