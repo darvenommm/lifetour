@@ -4,7 +4,7 @@
   border-top: 1px solid rgba($color-default-text, 0.2);
 
   @include tablet {
-    padding-top: 44px;
+    padding-top: 41px;
     padding-bottom: 40px;
   }
 
@@ -96,7 +96,7 @@
   padding: 0;
 
   @include tablet {
-    left: 0;
+    left: -3px;
 
     gap: 20px;
 
@@ -104,6 +104,8 @@
   }
 
   @include mobile {
+    left: 0;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px 31px;

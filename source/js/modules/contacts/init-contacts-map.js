@@ -10,6 +10,11 @@ export const initContactsMap = () => {
   const ICON_SIZE = [48, 48];
 
   const mapContainer = document.querySelector(CONTAINER_SELECTOR);
+
+  if (!mapContainer) {
+    return;
+  }
+
   mapContainer.replaceChildren();
 
   const map = createMap(mapContainer, {

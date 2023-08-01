@@ -3,7 +3,11 @@ export const addHeroVideoHandlers = () => {
   const BUTTON_SELECTOR = 'button';
 
   const parent = document.querySelector(PARENT_SELECTOR);
-  const button = parent.querySelector(BUTTON_SELECTOR);
+  const button = parent ? parent.querySelector(BUTTON_SELECTOR) : null;
+
+  if (!button) {
+    return;
+  }
 
   const src =
     (parent.dataset.src ? parent.dataset.src : 'https://www.youtube-nocookie.com/embed/9TZXsZItgdw')

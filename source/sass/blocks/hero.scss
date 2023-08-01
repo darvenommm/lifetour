@@ -300,6 +300,13 @@ $hero__background-time: 300ms;
   right: 0;
   top: 119px;
 
+  color: $color-resolution-blue;
+
+  background-color: rgba(#f5f6fa, 0.9);
+
+  width: 340px;
+  height: 220px;
+
   @include tablet {
     position: static;
 
