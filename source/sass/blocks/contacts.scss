@@ -205,11 +205,3 @@
     width: 60%;
   }
 }
-
-// for deleting Ukraine's flag from the leaflet map
-.leaflet-control-attribution {
-  svg {
-    /* stylelint-disable-next-line declaration-no-important */
-    display: none !important;
-  }
-}
