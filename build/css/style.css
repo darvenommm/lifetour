@@ -3283,7 +3283,20 @@ button {
 }
 
 .learning__slider {
+  position: relative;
+  overflow: visible;
   margin-bottom: 49px;
+}
+
+.learning__slider::before {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  right: -10000px;
+  left: 1220px;
+  z-index: 2;
+  background-color: #ffffff;
+  content: "";
 }
 
 .learning__slides {
@@ -3307,6 +3320,11 @@ button {
   max-width: 278px;
   padding: 20px;
   height: auto;
+}
+
+.learning__slide:nth-child(1n+5) {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .learning__slide picture {
@@ -4684,7 +4702,7 @@ button {
   }
 
   .footer {
-    padding-top: 41px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
 
@@ -5123,7 +5141,7 @@ button {
   }
 
   .question {
-    padding-top: 181px;
+    padding-top: 185px;
     padding-bottom: 175px;
   }
 

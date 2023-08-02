@@ -26,13 +26,3 @@ export const changeSliderBackground = (index) => {
 
   setNewSliderBackground(index);
 };
-
-export const disableActiveElementsOutSlide = (slides, index) => {
-  slides.forEach((slide, slideIndex) => {
-    const activeElements = slide.querySelectorAll('button, a');
-
-    activeElements.forEach((element) => {
-      element.tabIndex = slideIndex === index ? '0' : '-1';
-    });
-  });
-};

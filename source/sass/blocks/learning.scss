@@ -128,7 +128,24 @@
 }
 
 .learning__slider {
+  position: relative;
+
+  overflow: visible;
+
   margin-bottom: 49px;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    right: -10000px;
+    left: 1220px;
+    z-index: 2;
+
+    background-color: $color-default-bg;
+
+    content: "";
+  }
 
   @include tablet {
     margin-bottom: 41px;
@@ -153,11 +170,15 @@
   flex-shrink: 0;
 
   background-color: #ffffff;
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  box-shadow: $card-shadow;
 
   max-width: 278px;
   padding: 20px;
   height: auto;
+
+  &:nth-child(1n + 5) {
+    box-shadow: none;
+  }
 
   picture {
     display: flex;
