@@ -2,7 +2,7 @@
   padding-bottom: 126px;
 
   @include tablet {
-    padding-bottom: 77px;
+    padding-bottom: 79px;
   }
 
   @include mobile {
@@ -63,7 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 27px 30px;
   }
 
   @include mobile {

@@ -3,6 +3,7 @@ import {isMobile} from '../../../utils/is-mobile';
 
 import {changeSliderBackground} from './slides';
 import {renderNewBullets} from './pagination';
+import {stopVideo} from '../video';
 
 export function initHeroSlider() {
   const SLIDER_SELECTOR = '.hero__container';
@@ -28,6 +29,7 @@ export function initHeroSlider() {
         renderBullets(swiper);
       },
       slideChange: (swiper) => {
+        stopVideo();
         changeSliderBackground(swiper.activeIndex);
         renderBullets(swiper);
       },

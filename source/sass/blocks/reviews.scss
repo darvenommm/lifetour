@@ -20,6 +20,8 @@
   }
 
   @include mobile {
+    overflow: visible;
+
     width: 100%;
   }
 }
@@ -32,7 +34,7 @@
   margin-bottom: 33px;
 
   @include tablet {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   @include mobile {

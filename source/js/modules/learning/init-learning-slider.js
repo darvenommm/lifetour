@@ -6,6 +6,7 @@ export const initLearningSlider = () => {
   const SLIDER_SELECTOR = '.learning__slider';
   const PREV_BUTTON_SELECTOR = '.learning__prev';
   const NEXT_BUTTON_SELECTOR = '.learning__next';
+  const SLIDE_SELECTOR = '.learning__slide';
 
   const slider = new Swiper(SLIDER_SELECTOR, {
     allowTouchMove: isMobile(),
@@ -30,6 +31,20 @@ export const initLearningSlider = () => {
       nextEl: NEXT_BUTTON_SELECTOR,
     },
   });
+
+  const sliderParent = document.querySelector(SLIDER_SELECTOR);
+  const slides = sliderParent ? document.querySelectorAll(SLIDE_SELECTOR) : null;
+
+  if (slides) {
+    slides.forEach((slide, index) => {
+      const activeElements = slide.querySelectorAll('button, a');
+      activeElements.forEach((element) => {
+        element.addEventListener('focus', () => {
+          slider.slideTo(index);
+        });
+      });
+    });
+  }
 
   return slider;
 };

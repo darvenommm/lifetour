@@ -1,12 +1,12 @@
-export const activateBurger = () => {
-  const BURGER_ACTIVE = 'burgerActive';
-  const SHOWED_LINK_CLASS = 'link--on-light';
-  const BURGER_ARIA_LABEL_AFTER_OPENING = 'Нажми, чтобы закрыть меню.';
-  const BURGER_ARIA_LABEL_AFTER_CLOSING = 'Нажми, чтобы открыть меню.';
+const BURGER_ACTIVE = 'burgerActive';
+const SHOWED_LINK_CLASS = 'link--on-light';
+const BURGER_ARIA_LABEL_AFTER_OPENING = 'Нажми, чтобы закрыть меню.';
+const BURGER_ARIA_LABEL_AFTER_CLOSING = 'Нажми, чтобы открыть меню.';
 
-  const header = document.querySelector('.header');
-  const burger = header ? header.querySelector('.header__burger') : null;
-  const links = header ? header.querySelectorAll('.header__link') : null;
+const header = document.querySelector('.header');
+const burger = header ? header.querySelector('.header__burger') : null;
+
+export const activateBurger = () => {
 
   if (!burger) {
     return;
@@ -26,11 +26,16 @@ export const activateBurger = () => {
     }
   };
 
+  const getLinks = () => {
+    return header ? header.querySelectorAll('.header__link') : [];
+  };
+
   const closeHeader = () => {
     header.dataset[BURGER_ACTIVE] = false;
     burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_CLOSING;
+    window.scrollLock.enableScrolling();
 
-    links.forEach((link) => {
+    getLinks().forEach((link) => {
       link.classList.remove(SHOWED_LINK_CLASS);
       link.removeEventListener('click', closeHeader);
       document.removeEventListener('click', headerOuterClickHandler);
@@ -41,8 +46,9 @@ export const activateBurger = () => {
   const openHeader = () => {
     header.dataset[BURGER_ACTIVE] = true;
     burger.ariaLabel = BURGER_ARIA_LABEL_AFTER_OPENING;
+    window.scrollLock.disableScrolling();
 
-    links.forEach((link) => {
+    getLinks().forEach((link) => {
       link.classList.add(SHOWED_LINK_CLASS);
       link.addEventListener('click', closeHeader);
       document.addEventListener('click', headerOuterClickHandler);
@@ -55,5 +61,26 @@ export const activateBurger = () => {
 
   burger.addEventListener('click', () => {
     (header.dataset[BURGER_ACTIVE] === 'false' ? openHeader : closeHeader)();
+  });
+};
+
+export const getHeaderAfterInnerChanging = (callback) => {
+  const observer = new MutationObserver((mutationRecords) => {
+    callback(header, mutationRecords);
+  });
+
+  const observerOption = {
+    childList: true,
+    subtree: true,
+  };
+
+  if (header) {
+    observer.observe(header, observerOption);
+  }
+};
+
+export const getHeaderAfterWindowResizeChanging = (callback) => {
+  window.addEventListener('resize', () => {
+    callback(header);
   });
 };

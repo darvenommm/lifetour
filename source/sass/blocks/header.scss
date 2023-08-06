@@ -94,6 +94,19 @@ $header__menu-trans-time: 300ms;
     width: 26px;
     height: 18px;
   }
+
+  @include mobile {
+    position: relative;
+    top: -5px;
+
+    width: 25px;
+    height: 28px;
+
+    svg {
+      width: 25px;
+      height: 28px;
+    }
+  }
 }
 
 .header__burger-close {
@@ -176,25 +189,16 @@ $header__menu-trans-time: 300ms;
   }
 
   @include mobile {
+    display: inline;
+
     font-size: 14px;
     letter-spacing: 0.56px;
     padding: 5px;
   }
 }
 
-.header__tel {
-  font-size: 18px;
-  line-height: 100%;
-  font-weight: 600;
-
+.header__tels {
   flex-shrink: 0;
-  padding: 20px 0;
-
-  @include tablet {
-    font-size: 16px;
-
-    padding: 12px 0;
-  }
 
   @include mobile {
     position: absolute;
@@ -204,6 +208,28 @@ $header__menu-trans-time: 300ms;
     font-size: 14px;
 
     padding: 6px 0;
+  }
+}
+
+.header__tel {
+  display: block;
+
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+
+  padding: 20px 0;
+
+  @include tablet {
+    font-size: 16px;
+
+    padding: 12px 0;
+  }
+
+  @include mobile {
+    font-size: 14px;
+
+    padding: 3px 0;
   }
 }
 

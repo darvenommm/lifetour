@@ -3,12 +3,12 @@
   padding-bottom: 141px;
 
   @include tablet {
-    padding-top: 90px;
+    padding-top: 84px;
     padding-bottom: 70px;
   }
 
   @include mobile {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 33px;
   }
 }
@@ -54,10 +54,10 @@
   line-height: 150%;
 
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 
   @include tablet {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     width: 71.39%;
   }
 
@@ -146,7 +146,7 @@
     font-size: 16px;
     line-height: 100%;
 
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   @include mobile {

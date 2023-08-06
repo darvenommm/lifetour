@@ -134,17 +134,26 @@
 
   margin-bottom: 49px;
 
-  &::before {
+  &::before,
+  &::after {
     position: absolute;
     top: -3px;
     bottom: -3px;
-    right: -10000px;
-    left: 1220px;
     z-index: 2;
 
     background-color: $color-default-bg;
 
     content: "";
+  }
+
+  &::before {
+    left: -10000px;
+    right: 1220px;
+  }
+
+  &::after {
+    right: -10000px;
+    left: 1220px;
   }
 
   @include tablet {

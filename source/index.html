@@ -51,7 +51,9 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__tel secondary-link" href="tel:78007253232">8 800 725 32 32</a>
+            <div class="header__tels">
+              <a class="header__tel secondary-link" href="tel:78007253232">8 800 725 32 32</a>
+            </div>
           </div>
         </div>
       </header>
@@ -74,20 +76,20 @@
                     <a class="hero__button button" href="#">Смотреть тур</a>
                   </div>
                   <div class="hero__item-bottom">
-                    <button class="secondary-button">
+                    <a class="secondary-button" href="#">
                       <svg width="12" height="12">
                         <use xlink:href="./img/sprite.svg#moon"></use>
                       </svg>
                       6&nbsp;дней/5&nbsp;ночей
-                    </button>
-                    <button class="secondary-button">
+                    </a>
+                    <a class="secondary-button" href="#">
                       <svg width="12" height="12">
                         <use xlink:href="./img/sprite.svg#graph"></use>
                       </svg>
                       Высокая сложность
-                    </button>
+                    </a>
                   </div>
-                  <div class="hero__video" data-src="https://www.youtube-nocookie.com/embed/9TZXsZItgdw">
+                  <div class="hero__video" id="hero__youtube-player" data-video-id="9TZXsZItgdw">
                     <picture>
                       <source
                         media="(max-width: 1199px)"
@@ -140,18 +142,18 @@
                     <a class="hero__button button" href="#">Смотреть тур</a>
                   </div>
                   <div class="hero__item-bottom">
-                    <button class="secondary-button">
+                    <a class="secondary-button" href="#">
                       <svg width="12" height="12">
                         <use xlink:href="./img/sprite.svg#moon"></use>
                       </svg>
                       9&nbsp;дней/10&nbsp;ночей
-                    </button>
-                    <button class="secondary-button">
+                    </a>
+                    <a class="secondary-button" href="#">
                       <svg width="12" height="12">
                         <use xlink:href="./img/sprite.svg#graph"></use>
                       </svg>
                       Средняя сложность
-                    </button>
+                    </a>
                   </div>
                   <div class="hero__cards">
                     <picture>
@@ -197,18 +199,18 @@
                     <a class="hero__button button" href="#">Смотреть тур</a>
                   </div>
                   <div class="hero__item-bottom">
-                    <button class="secondary-button">
+                    <a class="secondary-button" href="#">
                       <svg width="12" height="12">
                         <use xlink:href="./img/sprite.svg#moon"></use>
                       </svg>
                       6&nbsp;дней/5&nbsp;ночей
-                    </button>
-                    <button class="secondary-button">
+                    </a>
+                    <a class="secondary-button" href="#">
                       <svg width="12" height="12">
                         <use xlink:href="./img/sprite.svg#graph"></use>
                       </svg>
                       Высокая сложность
-                    </button>
+                    </a>
                   </div>
                   <div class="hero__audio"></div>
                 </li>
@@ -697,6 +699,19 @@
                 <li class="learning__slide swiper-slide">
                   <picture aria-hidden="true">
                     <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/alex-tablet@2x.webp 2x, ./img/instructors/alex-tablet@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/alex-tablet@2x.jpg 2x, ./img/instructors/alex-tablet@1x.jpg 1x"
+                    >
+                    <source
                       width="238"
                       height="212"
                       srcset="./img/instructors/alex@2x.webp 2x, ./img/instructors/alex@1x.webp 1x"
@@ -729,6 +744,19 @@
                 </li>
                 <li class="learning__slide swiper-slide">
                   <picture aria-hidden="true">
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/svetlana-tablet@2x.webp 2x, ./img/instructors/svetlana-tablet@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/svetlana-tablet@2x.jpg 2x, ./img/instructors/svetlana-tablet@1x.jpg 1x"
+                    >
                     <source
                       width="238"
                       height="212"
@@ -764,6 +792,19 @@
                 <li class="learning__slide swiper-slide">
                   <picture aria-hidden="true">
                     <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/nadezhda-tablet@2x.webp 2x, ./img/instructors/nadezhda-tablet@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/nadezhda-tablet@2x.jpg 2x, ./img/instructors/nadezhda-tablet@1x.jpg 1x"
+                    >
+                    <source
                       width="238"
                       height="212"
                       srcset="./img/instructors/nadezhda@2x.webp 2x, ./img/instructors/nadezhda@1x.webp 1x"
@@ -798,6 +839,19 @@
                 <li class="learning__slide swiper-slide">
                   <picture aria-hidden="true">
                     <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/fedor-tablet@2x.webp 2x, ./img/instructors/fedor-tablet@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/fedor-tablet@2x.jpg 2x, ./img/instructors/fedor-tablet@1x.jpg 1x"
+                    >
+                    <source
                       width="238"
                       height="212"
                       srcset="./img/instructors/fedor@2x.webp 2x, ./img/instructors/fedor@1x.webp 1x"
@@ -831,6 +885,19 @@
                 </li>
                 <li class="learning__slide swiper-slide">
                   <picture aria-hidden="true">
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/fedor-tablet@2x.webp 2x, ./img/instructors/fedor-tablet@1x.webp 1x"
+                      type="image/webp"
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      width="176"
+                      height="212"
+                      srcset="./img/instructors/fedor-tablet@2x.jpg 2x, ./img/instructors/fedor-tablet@1x.jpg 1x"
+                    >
                     <source
                       width="238"
                       height="212"
@@ -1611,7 +1678,7 @@
               <div
                 class="question__text-input text-input"
                 data-validate-type="text"
-                data-limitation="letters"
+                data-limitation="name"
                 data-message-base="Поле обязательно к заполнению!"
                 data-message-extra="Проверьте корректность заполнения поля!"
                 data-required

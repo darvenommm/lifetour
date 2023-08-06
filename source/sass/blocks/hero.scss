@@ -7,7 +7,7 @@ $hero__background-time: 300ms;
 
   background-color: $color-polo-blue;
 
-  padding-top: 80px + ($header-height-desktop);
+  padding-top: $header-height-desktop;
   padding-bottom: 78px;
   margin-top: (-$header-height-desktop);
 
@@ -60,13 +60,13 @@ $hero__background-time: 300ms;
   }
 
   @include tablet {
-    padding-top: 100px + ($header-height-tablet);
+    padding-top: $header-height-tablet;
     padding-bottom: 72px;
     margin-top: (-$header-height-tablet);
   }
 
   @include mobile {
-    padding-top: 70px + ($header-height-mobile);
+    padding-top: $header-height-mobile;
     padding-bottom: 18px;
     margin-top: (-$header-height-mobile);
   }
@@ -74,6 +74,16 @@ $hero__background-time: 300ms;
 
 .hero__container {
   position: relative;
+
+  padding-top: 80px;
+
+  @include tablet {
+    padding-top: 100px;
+  }
+
+  @include mobile {
+    padding-top: 70px;
+  }
 }
 
 .hero__items {
