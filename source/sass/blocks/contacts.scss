@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 79px;
-  padding-bottom: 141px;
+  padding-bottom: 110px;
 
   @include tablet {
     padding-top: 84px;
@@ -77,7 +77,7 @@
 .contacts__items {
   display: flex;
   flex-direction: column;
-  gap: 19px 0;
+  gap: 35px 0;
 
   list-style: none;
 
